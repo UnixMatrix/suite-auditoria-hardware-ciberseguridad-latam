@@ -1,0 +1,25 @@
+{
+  "name": "suite-auditoria-hardware-ciberseguridad",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Suite pública de auditoría forense de hardware, ciberseguridad local y resiliencia digital.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "hardware",
+    "ciberseguridad",
+    "diagnostico",
+    "privacidad",
+    "laptops",
+    "smartphones",
+    "tecnolatino",
+    "laptops-renovadas"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^7.0.0"
+  }
+}
