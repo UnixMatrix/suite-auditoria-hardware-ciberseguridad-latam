@@ -1,4 +1,1 @@
-User-agent: *
-Allow: /
 
-Sitemap: https://suite-auditoria-hardware-ciberseguridad-latam.vercel.app/sitemap.xml
