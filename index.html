@@ -1,1543 +1,2387 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, viewport-fit=cover"
-  >
-
-  <title>
-    Suite de Auditoría Forense de Hardware, Ciberseguridad y Resiliencia Digital
-  </title>
-
-  <meta
-    name="description"
-    content="87 herramientas públicas de TecnoLatino y Laptops Renovadas para diagnóstico técnico, ciberseguridad, privacidad, compra informada y resiliencia digital."
-  >
-
-  <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#0f172a">
-
-  <!-- Open Graph -->
-  <meta
-    property="og:title"
-    content="Suite de Auditoría Forense de Hardware y Ciberseguridad"
-  >
-
-  <meta
-    property="og:description"
-    content="87 herramientas públicas de TecnoLatino y Laptops Renovadas."
-  >
-
-  <meta property="og:type" content="website">
-
-  <!-- Markdown renderer -->
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-
-  <!-- Sanitización del HTML generado -->
-  <script src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"></script>
-
-  <style>
-    /* =========================================================
-       VARIABLES
-       ========================================================= */
-
-    :root {
-      --bg: #f4f7fb;
-      --surface: #ffffff;
-      --surface-soft: #f8fafc;
-
-      --text: #172033;
-      --muted: #667085;
-
-      --border: #e2e8f0;
-
-      --blue: #2563eb;
-      --blue-dark: #1d4ed8;
-
-      --green: #15803d;
-      --green-soft: #ecfdf5;
-
-      --red: #dc2626;
-
-      --shadow:
-        0 10px 35px rgba(15, 23, 42, 0.07);
-
-      --radius: 18px;
-
-      --max-width: 1160px;
-    }
-
-    /* =========================================================
-       RESET
-       ========================================================= */
-
-    *,
-    *::before,
-    *::after {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-
-      font-family:
-        Inter,
-        ui-sans-serif,
-        system-ui,
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Roboto,
-        Helvetica,
-        Arial,
-        sans-serif;
-
-      background: var(--bg);
-
-      color: var(--text);
-
-      line-height: 1.7;
-
-      -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    /* =========================================================
-       HEADER
-       ========================================================= */
-
-    .site-header {
-      position: sticky;
-
-      top: 0;
-
-      z-index: 100;
-
-      background:
-        rgba(255, 255, 255, 0.94);
-
-      backdrop-filter: blur(14px);
-
-      border-bottom:
-        1px solid var(--border);
-    }
-
-    .header-inner {
-      width: min(
-        calc(100% - 32px),
-        var(--max-width)
-      );
-
-      margin: 0 auto;
-
-      min-height: 68px;
-
-      display: flex;
-
-      align-items: center;
-
-      justify-content: space-between;
-
-      gap: 24px;
-    }
-
-    .brand {
-      color: var(--text);
-
-      text-decoration: none;
-
-      font-weight: 800;
-
-      font-size: 1.05rem;
-
-      letter-spacing: -0.02em;
-
-      white-space: nowrap;
-    }
-
-    .main-nav {
-      display: flex;
-
-      align-items: center;
-
-      gap: 20px;
-
-      flex-wrap: wrap;
-    }
-
-    .main-nav a {
-      color: var(--muted);
-
-      text-decoration: none;
-
-      font-size: 0.94rem;
-
-      font-weight: 600;
-
-      transition:
-        color 0.2s ease;
-    }
-
-    .main-nav a:hover {
-      color: var(--blue);
-    }
-
-    /* =========================================================
-       HERO
-       ========================================================= */
-
-    .hero {
-      width: min(
-        calc(100% - 32px),
-        var(--max-width)
-      );
-
-      margin:
-        38px auto 0;
-
-      padding:
-        clamp(28px, 5vw, 60px);
-
-      color: white;
-
-      border-radius:
-        var(--radius);
-
-      background:
-        linear-gradient(
-          135deg,
-          #0f172a,
-          #172554 58%,
-          #064e3b
-        );
-
-      box-shadow:
-        var(--shadow);
-    }
-
-    .hero-eyebrow {
-      margin:
-        0 0 12px;
-
-      color:
-        #86efac;
-
-      font-size:
-        0.83rem;
-
-      font-weight:
-        800;
-
-      text-transform:
-        uppercase;
-
-      letter-spacing:
-        0.09em;
-    }
-
-    .hero h1 {
-      max-width:
-        900px;
-
-      margin:
-        0 0 18px;
-
-      color:
-        white;
-
-      font-size:
-        clamp(
-          2rem,
-          5vw,
-          4rem
-        );
-
-      line-height:
-        1.08;
-
-      letter-spacing:
-        -0.045em;
-    }
-
-    .hero p {
-      max-width:
-        780px;
-
-      margin:
-        0;
-
-      color:
-        #dbeafe;
-
-      font-size:
-        clamp(
-          1rem,
-          1.8vw,
-          1.2rem
-        );
-    }
-
-    /* =========================================================
-       ESTADÍSTICAS
-       ========================================================= */
-
-    .stats {
-      width: min(
-        calc(100% - 32px),
-        var(--max-width)
-      );
-
-      margin:
-        22px auto 0;
-
-      display:
-        grid;
-
-      grid-template-columns:
-        repeat(3, 1fr);
-
-      gap:
-        14px;
-    }
-
-    .stat {
-      padding:
-        20px;
-
-      background:
-        var(--surface);
-
-      border:
-        1px solid var(--border);
-
-      border-radius:
-        14px;
-
-      box-shadow:
-        0 4px 18px
-        rgba(15, 23, 42, 0.04);
-    }
-
-    .stat strong {
-      display:
-        block;
-
-      margin-bottom:
-        3px;
-
-      color:
-        var(--text);
-
-      font-size:
-        1.65rem;
-
-      line-height:
-        1.1;
-    }
-
-    .stat span {
-      color:
-        var(--muted);
-
-      font-size:
-        0.92rem;
-    }
-
-    /* =========================================================
-       CONTENEDOR PRINCIPAL
-       ========================================================= */
-
-    .page-shell {
-      width: min(
-        calc(100% - 32px),
-        var(--max-width)
-      );
-
-      margin:
-        24px auto 60px;
-
-      display:
-        grid;
-
-      grid-template-columns:
-        minmax(0, 1fr)
-        260px;
-
-      gap:
-        24px;
-
-      align-items:
-        start;
-    }
-
-    .content-card {
-      min-width:
-        0;
-
-      padding:
-        clamp(
-          24px,
-          4vw,
-          52px
-        );
-
-      background:
-        var(--surface);
-
-      border:
-        1px solid var(--border);
-
-      border-radius:
-        var(--radius);
-
-      box-shadow:
-        var(--shadow);
-    }
-
-    /* =========================================================
-       SIDEBAR
-       ========================================================= */
-
-    .sidebar {
-      position:
-        sticky;
-
-      top:
-        92px;
-
-      padding:
-        22px;
-
-      background:
-        var(--surface);
-
-      border:
-        1px solid var(--border);
-
-      border-radius:
-        16px;
-
-      box-shadow:
-        0 6px 22px
-        rgba(15, 23, 42, 0.05);
-    }
-
-    .sidebar h2 {
-      margin:
-        0 0 14px !important;
-
-      padding:
-        0 !important;
-
-      border:
-        0 !important;
-
-      font-size:
-        1rem !important;
-
-      text-transform:
-        uppercase;
-
-      letter-spacing:
-        0.06em;
-    }
-
-    .sidebar a {
-      display:
-        block;
-
-      padding:
-        8px 0;
-
-      color:
-        var(--muted);
-
-      text-decoration:
-        none;
-
-      border-bottom:
-        1px solid #f1f5f9;
-
-      font-size:
-        0.9rem;
-    }
-
-    .sidebar a:hover {
-      color:
-        var(--blue);
-    }
-
-    /* =========================================================
-       MARKDOWN RENDERIZADO
-       ========================================================= */
-
-    #markdown-content {
-      min-height:
-        500px;
-    }
-
-    #markdown-content > h1:first-child {
-      display:
-        none;
-    }
-
-    #markdown-content h1,
-    #markdown-content h2,
-    #markdown-content h3,
-    #markdown-content h4 {
-      color:
-        var(--text);
-
-      line-height:
-        1.2;
-
-      letter-spacing:
-        -0.025em;
-
-      scroll-margin-top:
-        95px;
-    }
-
-    #markdown-content h1 {
-      margin:
-        48px 0 18px;
-
-      font-size:
-        clamp(
-          1.8rem,
-          3.5vw,
-          2.7rem
-        );
-    }
-
-    #markdown-content h2 {
-      margin:
-        42px 0 18px;
-
-      padding-top:
-        30px;
-
-      border-top:
-        1px solid var(--border);
-
-      font-size:
-        clamp(
-          1.45rem,
-          2.5vw,
-          2rem
-        );
-    }
-
-    #markdown-content h3 {
-      margin:
-        30px 0 14px;
-
-      font-size:
-        1.3rem;
-    }
-
-    #markdown-content h4 {
-      margin:
-        24px 0 12px;
-    }
-
-    #markdown-content p {
-      margin:
-        0 0 18px;
-
-      font-size:
-        1rem;
-    }
-
-    #markdown-content ul,
-    #markdown-content ol {
-      margin:
-        0 0 24px;
-
-      padding-left:
-        1.4rem;
-    }
-
-    #markdown-content li {
-      margin:
-        7px 0;
-    }
-
-    #markdown-content li p {
-      margin:
-        0;
-    }
-
-    #markdown-content a {
-      color:
-        var(--blue);
-
-      text-decoration:
-        underline;
-
-      text-decoration-thickness:
-        1px;
-
-      text-underline-offset:
-        3px;
-
-      overflow-wrap:
-        anywhere;
-    }
-
-    #markdown-content a:hover {
-      color:
-        var(--blue-dark);
-    }
-
-    #markdown-content strong {
-      color:
-        #0f172a;
-    }
-
-    #markdown-content hr {
-      margin:
-        36px 0;
-
-      border:
-        0;
-
-      border-top:
-        1px solid var(--border);
-    }
-
-    #markdown-content code {
-      padding:
-        2px 6px;
-
-      color:
-        #3730a3;
-
-      background:
-        #eef2ff;
-
-      border-radius:
-        6px;
-
-      font-size:
-        0.91em;
-    }
-
-    #markdown-content pre {
-      margin:
-        22px 0;
-
-      padding:
-        20px;
-
-      overflow-x:
-        auto;
-
-      color:
-        #e2e8f0;
-
-      background:
-        #0f172a;
-
-      border-radius:
-        12px;
-    }
-
-    #markdown-content pre code {
-      padding:
-        0;
-
-      color:
-        inherit;
-
-      background:
-        transparent;
-    }
-
-    #markdown-content blockquote {
-      margin:
-        24px 0;
-
-      padding:
-        14px 18px;
-
-      color:
-        #334155;
-
-      background:
-        #f0fdfa;
-
-      border-left:
-        4px solid
-        var(--green);
-
-      border-radius:
-        0 10px 10px 0;
-    }
-
-    /* =========================================================
-       LISTAS DE HERRAMIENTAS
-       ========================================================= */
-
-    #markdown-content li > p > strong:first-child,
-    #markdown-content li > strong:first-child {
-      color:
-        #0f172a;
-    }
-
-    /* =========================================================
-       TABLAS
-       ========================================================= */
-
-    .table-wrapper {
-      width:
-        100%;
-
-      margin:
-        24px 0;
-
-      overflow-x:
-        auto;
-
-      border:
-        1px solid var(--border);
-
-      border-radius:
-        12px;
-    }
-
-    #markdown-content table {
-      width:
-        100%;
-
-      min-width:
-        520px;
-
-      border-collapse:
-        collapse;
-
-      background:
-        white;
-    }
-
-    #markdown-content th,
-    #markdown-content td {
-      padding:
-        12px 15px;
-
-      border-bottom:
-        1px solid var(--border);
-
-      text-align:
-        left;
-    }
-
-    #markdown-content th {
-      color:
-        #334155;
-
-      background:
-        #f8fafc;
-
-      font-weight:
-        700;
-    }
-
-    /* =========================================================
-       BADGES SUPERIORES
-       ========================================================= */
-
-    .project-badges {
-      display:
-        flex;
-
-      gap:
-        9px;
-
-      flex-wrap:
-        wrap;
-
-      margin-top:
-        24px;
-    }
-
-    .project-badge {
-      padding:
-        7px 11px;
-
-      color:
-        #065f46;
-
-      background:
-        #d1fae5;
-
-      border:
-        1px solid #a7f3d0;
-
-      border-radius:
-        999px;
-
-      font-size:
-        0.84rem;
-
-      font-weight:
-        700;
-    }
-
-    /* =========================================================
-       ESTADO DE CARGA
-       ========================================================= */
-
-    .loading {
-      padding:
-        50px 20px;
-
-      color:
-        var(--muted);
-
-      text-align:
-        center;
-    }
-
-    .error {
-      padding:
-        22px;
-
-      color:
-        #991b1b;
-
-      background:
-        #fef2f2;
-
-      border:
-        1px solid #fecaca;
-
-      border-radius:
-        12px;
-    }
-
-    /* =========================================================
-       FOOTER
-       ========================================================= */
-
-    .site-footer {
-      padding:
-        32px 20px 42px;
-
-      color:
-        var(--muted);
-
-      text-align:
-        center;
-
-      font-size:
-        0.9rem;
-    }
-
-    /* =========================================================
-       RESPONSIVE
-       ========================================================= */
-
-    @media (
-      max-width: 900px
-    ) {
-
-      .page-shell {
-        grid-template-columns:
-          1fr;
-      }
-
-      .sidebar {
-        display:
-          none;
-      }
-
-    }
-
-    @media (
-      max-width: 700px
-    ) {
-
-      .header-inner {
-        min-height:
-          auto;
-
-        padding:
-          13px 0;
-
-        align-items:
-          flex-start;
-
-        flex-direction:
-          column;
-      }
-
-      .main-nav {
-        gap:
-          13px;
-      }
-
-      .hero {
-        margin-top:
-          18px;
-
-        padding:
-          28px 24px;
-      }
-
-      .stats {
-        grid-template-columns:
-          1fr;
-      }
-
-      .content-card {
-        padding:
-          24px 20px;
-      }
-
-      #markdown-content h1 {
-        font-size:
-          1.7rem;
-      }
-
-      #markdown-content h2 {
-        font-size:
-          1.45rem;
-      }
-
-    }
-
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+
+<title>Suite de Auditoría Forense de Hardware, Ciberseguridad y Resiliencia Digital</title>
+
+<meta
+  name="description"
+  content="87 herramientas públicas de TecnoLatino y Laptops Renovadas para diagnóstico técnico, ciberseguridad, privacidad, compra informada y resiliencia digital."
+>
+
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#0f172a">
+
+<style>
+:root{
+  --bg:#f5f7fb;
+  --surface:#fff;
+  --text:#182033;
+  --muted:#667085;
+  --line:#e2e8f0;
+  --blue:#2563eb;
+  --blue2:#1d4ed8;
+  --green:#15803d;
+  --green-soft:#ecfdf5;
+  --dark:#0f172a;
+  --radius:18px;
+  --shadow:0 12px 38px rgba(15,23,42,.07);
+  --max:1160px
+}
+
+*{
+  box-sizing:border-box
+}
+
+html{
+  scroll-behavior:smooth
+}
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+  line-height:1.72;
+  -webkit-font-smoothing:antialiased
+}
+
+a{
+  color:var(--blue);
+  text-underline-offset:3px;
+  overflow-wrap:anywhere
+}
+
+a:hover{
+  color:var(--blue2)
+}
+
+/* HEADER */
+
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:20;
+  border-bottom:1px solid var(--line);
+  background:rgba(255,255,255,.94);
+  backdrop-filter:blur(14px)
+}
+
+.header-inner{
+  width:min(calc(100% - 32px),var(--max));
+  min-height:66px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px
+}
+
+.brand{
+  text-decoration:none;
+  color:var(--text);
+  font-weight:850;
+  letter-spacing:-.02em
+}
+
+.nav{
+  display:flex;
+  gap:16px;
+  flex-wrap:wrap
+}
+
+.nav a{
+  text-decoration:none;
+  color:var(--muted);
+  font-size:.93rem;
+  font-weight:650
+}
+
+.nav a:hover{
+  color:var(--blue)
+}
+
+/* HERO */
+
+.hero{
+  width:min(calc(100% - 32px),var(--max));
+  margin:34px auto 0;
+  padding:clamp(28px,5vw,58px);
+  border-radius:22px;
+  color:#fff;
+  background:
+    linear-gradient(
+      135deg,
+      #0f172a,
+      #172554 55%,
+      #064e3b
+    );
+  box-shadow:var(--shadow)
+}
+
+.eyebrow{
+  margin:0 0 12px;
+  color:#86efac;
+  font-size:.82rem;
+  font-weight:800;
+  letter-spacing:.1em;
+  text-transform:uppercase
+}
+
+.hero h1{
+  max-width:980px;
+  margin:0 0 18px;
+  color:#fff;
+  font-size:clamp(2rem,5vw,4rem);
+  line-height:1.06;
+  letter-spacing:-.045em
+}
+
+.hero p{
+  max-width:850px;
+  margin:0;
+  color:#dbeafe;
+  font-size:clamp(1rem,1.8vw,1.18rem)
+}
+
+.badges{
+  display:flex;
+  gap:9px;
+  flex-wrap:wrap;
+  margin-top:24px
+}
+
+.badge{
+  display:inline-flex;
+  padding:7px 11px;
+  border:1px solid #a7f3d0;
+  border-radius:999px;
+  background:#d1fae5;
+  color:#065f46;
+  font-size:.84rem;
+  font-weight:750
+}
+
+/* ESTADÍSTICAS */
+
+.stats{
+  width:min(calc(100% - 32px),var(--max));
+  margin:18px auto 0;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px
+}
+
+.stat{
+  padding:19px 20px;
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:var(--surface);
+  box-shadow:0 4px 18px rgba(15,23,42,.04)
+}
+
+.stat strong{
+  display:block;
+  font-size:1.7rem;
+  line-height:1.1
+}
+
+.stat span{
+  color:var(--muted);
+  font-size:.92rem
+}
+
+/* CONTENIDO */
+
+.shell{
+  width:min(calc(100% - 32px),var(--max));
+  margin:24px auto 58px;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 250px;
+  gap:24px;
+  align-items:start
+}
+
+.content{
+  min-width:0;
+  padding:clamp(24px,4vw,52px);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  background:var(--surface);
+  box-shadow:var(--shadow)
+}
+
+/* SIDEBAR */
+
+.side{
+  position:sticky;
+  top:90px;
+  padding:20px;
+  border:1px solid var(--line);
+  border-radius:16px;
+  background:var(--surface);
+  box-shadow:0 6px 22px rgba(15,23,42,.05)
+}
+
+.side strong{
+  display:block;
+  margin-bottom:10px;
+  font-size:.82rem;
+  letter-spacing:.08em;
+  text-transform:uppercase
+}
+
+.side a{
+  display:block;
+  padding:8px 0;
+  border-bottom:1px solid #f1f5f9;
+  color:var(--muted);
+  text-decoration:none;
+  font-size:.9rem
+}
+
+.side a:last-child{
+  border-bottom:0
+}
+
+.side a:hover{
+  color:var(--blue)
+}
+
+/* TIPOGRAFÍA */
+
+.content h1,
+.content h2,
+.content h3,
+.content h4{
+  line-height:1.2;
+  letter-spacing:-.025em;
+  scroll-margin-top:92px
+}
+
+.content h1{
+  margin:46px 0 18px;
+  font-size:clamp(1.75rem,3vw,2.45rem)
+}
+
+.content h1:first-child{
+  margin-top:0
+}
+
+.content h2{
+  margin:40px 0 16px;
+  padding-top:28px;
+  border-top:1px solid var(--line);
+  font-size:clamp(1.4rem,2.4vw,1.95rem)
+}
+
+.content h3{
+  margin:28px 0 12px;
+  font-size:1.27rem
+}
+
+.content h4{
+  margin:24px 0 10px
+}
+
+.content p{
+  margin:0 0 17px
+}
+
+.content ul,
+.content ol{
+  margin:0 0 23px;
+  padding-left:1.4rem
+}
+
+.content li{
+  margin:7px 0
+}
+
+.content li p{
+  margin:0
+}
+
+.content strong{
+  color:var(--dark)
+}
+
+.content hr{
+  margin:34px 0;
+  border:0;
+  border-top:1px solid var(--line)
+}
+
+.content code{
+  padding:2px 6px;
+  border-radius:6px;
+  background:#eef2ff;
+  color:#3730a3;
+  font-size:.92em
+}
+
+.content pre{
+  overflow:auto;
+  margin:22px 0;
+  padding:18px;
+  border-radius:12px;
+  background:#0f172a;
+  color:#e2e8f0
+}
+
+.content pre code{
+  padding:0;
+  background:transparent;
+  color:inherit
+}
+
+.content blockquote{
+  margin:22px 0;
+  padding:14px 18px;
+  border-left:4px solid var(--green);
+  border-radius:0 10px 10px 0;
+  background:#f0fdfa;
+  color:#334155
+}
+
+.content table{
+  width:100%;
+  margin:22px 0;
+  border-collapse:collapse;
+  border:1px solid var(--line)
+}
+
+.content th,
+.content td{
+  padding:12px 14px;
+  border-bottom:1px solid var(--line);
+  text-align:left
+}
+
+.content th{
+  background:#f8fafc
+}
+
+/* FOOTER */
+
+.footer{
+  width:min(calc(100% - 32px),var(--max));
+  margin:-34px auto 40px;
+  color:var(--muted);
+  text-align:center;
+  font-size:.9rem
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+  .shell{
+    grid-template-columns:1fr
+  }
+
+  .side{
+    display:none
+  }
+}
+
+@media(max-width:700px){
+
+  .header-inner{
+    padding:12px 0;
+    align-items:flex-start;
+    flex-direction:column
+  }
+
+  .hero{
+    margin-top:18px;
+    padding:28px 22px
+  }
+
+  .stats{
+    grid-template-columns:1fr
+  }
+
+  .content{
+    padding:24px 20px
+  }
+
+  .content table{
+    display:block;
+    overflow-x:auto
+  }
+}
+</style>
 </head>
 
 <body>
 
-  <!-- =======================================================
-       HEADER
-       ======================================================= -->
+<header class="site-header">
+  <div class="header-inner">
 
-  <header class="site-header">
+    <a
+      class="brand"
+      href="/"
+    >
+      🧰 Suite de Auditoría
+    </a>
 
-    <div class="header-inner">
-
-      <a
-        href="/"
-        class="brand"
-      >
-        🧰 Suite de Auditoría
-      </a>
-
-      <nav
-        class="main-nav"
-        aria-label="Navegación principal"
-      >
-
-        <a
-          href="https://tecnolatino.com/herramientas/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          TecnoLatino
-        </a>
-
-        <a
-          href="https://laptopsrenovadas.com/herramientas/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Laptops Renovadas
-        </a>
-
-        <a href="#inventario">
-          Inventario
-        </a>
-
-      </nav>
-
-    </div>
-
-  </header>
-
-
-  <!-- =======================================================
-       HERO
-       ======================================================= -->
-
-  <section class="hero">
-
-    <div class="hero-eyebrow">
-      Laboratorio técnico público
-    </div>
-
-    <h1>
-      Suite de Auditoría Forense de Hardware,
-      Ciberseguridad Local y Resiliencia Digital
-    </h1>
-
-    <p>
-      Ecosistema público de herramientas interactivas para
-      diagnóstico técnico, seguridad, privacidad, compra
-      informada y resiliencia digital.
-    </p>
-
-    <div class="project-badges">
-
-      <span class="project-badge">
-        🔒 Local-first
-      </span>
-
-      <span class="project-badge">
-        📱 52 herramientas TecnoLatino
-      </span>
-
-      <span class="project-badge">
-        💻 35 herramientas Laptops Renovadas
-      </span>
-
-      <span class="project-badge">
-        🧰 87 herramientas totales
-      </span>
-
-    </div>
-
-  </section>
-
-
-  <!-- =======================================================
-       ESTADÍSTICAS
-       ======================================================= -->
-
-  <section
-    class="stats"
-    id="inventario"
-  >
-
-    <div class="stat">
-
-      <strong>
-        52
-      </strong>
-
-      <span>
-        Herramientas TecnoLatino
-      </span>
-
-    </div>
-
-
-    <div class="stat">
-
-      <strong>
-        35
-      </strong>
-
-      <span>
-        Herramientas Laptops Renovadas
-      </span>
-
-    </div>
-
-
-    <div class="stat">
-
-      <strong>
-        87
-      </strong>
-
-      <span>
-        Soluciones públicas combinadas
-      </span>
-
-    </div>
-
-  </section>
-
-
-  <!-- =======================================================
-       CONTENIDO
-       ======================================================= -->
-
-  <div class="page-shell">
-
-    <main class="content-card">
-
-      <div
-        id="markdown-content"
-      >
-
-        <div class="loading">
-          Cargando catálogo completo…
-        </div>
-
-      </div>
-
-    </main>
-
-
-    <!-- =====================================================
-         SIDEBAR
-         ===================================================== -->
-
-    <aside
-      class="sidebar"
-      aria-label="Índice rápido"
+    <nav
+      class="nav"
+      aria-label="Navegación principal"
     >
 
-      <h2>
-        Índice rápido
-      </h2>
-
-      <a href="#arquitectura">
-        🔒 Privacidad
+      <a
+        href="https://tecnolatino.com/herramientas/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        TecnoLatino
       </a>
 
-      <a href="#tecnolatino">
-        📱 TecnoLatino
-      </a>
-
-      <a href="#laptops-renovadas">
-        💻 Laptops Renovadas
-      </a>
-
-      <a href="#suites">
-        🧠 Suites
-      </a>
-
-      <a href="#seguridad">
-        🔐 Seguridad
+      <a
+        href="https://laptopsrenovadas.com/herramientas/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Laptops Renovadas
       </a>
 
       <a href="#inventario">
-        📊 Inventario
+        Inventario
       </a>
 
-    </aside>
+    </nav>
+
+  </div>
+</header>
+
+
+<section class="hero">
+
+  <p class="eyebrow">
+    Laboratorio técnico público
+  </p>
+
+  <h1>
+    Suite de Auditoría Forense de Hardware,
+    Ciberseguridad Local y Resiliencia Digital
+  </h1>
+
+  <p>
+    Un repositorio público e indexable que centraliza
+    herramientas interactivas, diagnóstico técnico,
+    privacidad, compra informada y resiliencia digital.
+  </p>
+
+  <div
+    class="badges"
+    aria-label="Resumen del proyecto"
+  >
+
+    <span class="badge">
+      🔒 Local-first
+    </span>
+
+    <span class="badge">
+      📱 52 herramientas TecnoLatino
+    </span>
+
+    <span class="badge">
+      💻 35 herramientas Laptops Renovadas
+    </span>
+
+    <span class="badge">
+      🧰 87 herramientas totales
+    </span>
 
   </div>
 
+</section>
+
+
+<section
+  class="stats"
+  id="inventario"
+  aria-label="Inventario"
+>
 
-  <!-- =======================================================
-       FOOTER
-       ======================================================= -->
+  <div class="stat">
+    <strong>52</strong>
+    <span>Herramientas TecnoLatino</span>
+  </div>
 
-  <footer class="site-footer">
+  <div class="stat">
+    <strong>35</strong>
+    <span>Herramientas Laptops Renovadas</span>
+  </div>
 
-    <strong>
-      Suite de Auditoría Forense
-    </strong>
+  <div class="stat">
+    <strong>87</strong>
+    <span>Soluciones públicas combinadas</span>
+  </div>
 
-    <br>
+</section>
+
+
+<div class="shell">
 
-    TecnoLatino + Laptops Renovadas
+<main class="content">
+
+<p>
+Un repositorio público e indexable que centraliza herramientas
+interactivas, scripts de diagnóstico y utilidades web avanzadas
+para la auditoría técnica de dispositivos móviles, laptops
+reacondicionadas, ciberseguridad ciudadana, conectividad y
+resiliencia digital.
+</p>
+
+<p>
+La mayor parte del procesamiento técnico se realiza directamente
+en el navegador. Cuando una herramienta necesita consultar
+información externa —por ejemplo red, DNS, compatibilidad o
+servicios públicos— se limita a los datos necesarios para
+ejecutar esa función.
+</p>
+
+
+<hr>
+
+
+<h2 id="privacidad">
+🔒 Arquitectura Tecnológica y Privacidad
+</h2>
+
+<p>
+A diferencia de plataformas tradicionales que requieren cuentas
+permanentes o perfiles centralizados, este ecosistema prioriza una
+arquitectura <strong>local-first</strong> y la soberanía digital:
+</p>
+
+<ul>
+
+<li>
+<strong>Sin cuenta obligatoria:</strong>
+Las suites principales pueden utilizarse sin crear una cuenta de usuario.
+</li>
+
+<li>
+<strong>Persistencia local:</strong>
+El historial técnico y el contexto de las suites se almacenan
+principalmente en el navegador mediante tecnologías como
+<code>IndexedDB</code>.
+</li>
+
+<li>
+<strong>Portabilidad:</strong>
+Los módulos compatibles permiten exportar, importar o borrar
+los datos técnicos locales.
+</li>
+
+<li>
+<strong>Procesamiento local:</strong>
+Diagnósticos, cálculos y análisis compatibles se ejecutan
+directamente en el dispositivo del usuario.
+</li>
+
+<li>
+<strong>Minimización de datos:</strong>
+Las herramientas están diseñadas para solicitar solamente
+la información necesaria para producir el diagnóstico.
+</li>
+
+<li>
+<strong>Resultados reutilizables:</strong>
+Las suites <strong>Mi Tecnología</strong> y
+<strong>Mi Laptop</strong> permiten que distintas herramientas
+compartan contexto técnico local sin obligar al usuario a repetir
+información innecesariamente.
+</li>
+
+</ul>
+
+
+<hr>
+
+
+<h2 id="ecosistema">
+🧭 Estructura del Ecosistema Unificado
+</h2>
+
+<p>
+El laboratorio se divide en dos grandes suites de diagnóstico
+y decisión que funcionan de manera complementaria.
+</p>
 
-    <br>
 
-    Sitio estático publicado desde GitHub mediante Vercel.
-
-  </footer>
-
-
-  <!-- =======================================================
-       SCRIPT
-       ======================================================= -->
-
-  <script>
-
-    /*
-     * El README.md debe estar en la misma raíz del repositorio
-     * que este index.html.
-     */
-
-    const markdownContainer =
-      document.getElementById(
-        "markdown-content"
-      );
-
-
-    async function cargarREADME() {
-
-      try {
-
-        /*
-         * Evita que Vercel o el navegador reutilicen
-         * una copia antigua durante una actualización.
-         */
-
-        const response =
-          await fetch(
-            "/README.md?v=" +
-            Date.now(),
-            {
-              cache: "no-store"
-            }
-          );
-
-
-        if (!response.ok) {
-
-          throw new Error(
-            "No se pudo cargar README.md"
-          );
-
-        }
-
-
-        const markdown =
-          await response.text();
-
-
-        /*
-         * Configuración básica de Marked.
-         */
-
-        marked.setOptions({
-
-          gfm: true,
-
-          breaks: false,
-
-          headerIds: true,
-
-          mangle: false
-
-        });
-
-
-        /*
-         * Convierte Markdown a HTML.
-         */
-
-        const htmlGenerado =
-          marked.parse(
-            markdown
-          );
-
-
-        /*
-         * Sanitiza antes de insertar.
-         */
-
-        const htmlSeguro =
-          DOMPurify.sanitize(
-            htmlGenerado,
-            {
-              ADD_ATTR: [
-                "target",
-                "rel"
-              ]
-            }
-          );
-
-
-        markdownContainer.innerHTML =
-          htmlSeguro;
-
-
-        /*
-         * Oculta los badges rotos del README original
-         * que usan shields.io sin una imagen específica.
-         */
-
-        markdownContainer
-          .querySelectorAll(
-            'img[src="https://shields.io"], img[src="https://shields.io/"]'
-          )
-          .forEach(
-            img => {
-
-              const parent =
-                img.closest("a");
-
-              if (parent) {
-
-                parent.remove();
-
-              } else {
-
-                img.remove();
-
-              }
-
-            }
-          );
-
-
-        /*
-         * Si el párrafo queda vacío después de quitar badges,
-         * lo elimina.
-         */
-
-        markdownContainer
-          .querySelectorAll("p")
-          .forEach(
-            p => {
-
-              if (
-                p.textContent.trim() === "" &&
-                p.children.length === 0
-              ) {
-
-                p.remove();
-
-              }
-
-            }
-          );
-
-
-        /*
-         * Links externos en nueva pestaña.
-         */
-
-        markdownContainer
-          .querySelectorAll("a")
-          .forEach(
-            link => {
-
-              try {
-
-                const url =
-                  new URL(
-                    link.href,
-                    location.href
-                  );
-
-
-                if (
-                  url.hostname !==
-                  location.hostname
-                ) {
-
-                  link.target =
-                    "_blank";
-
-                  link.rel =
-                    "noopener noreferrer";
-
-                }
-
-              } catch (error) {
-
-                /*
-                 * Ignora anchors u otros links no absolutos.
-                 */
-
-              }
-
-            }
-          );
-
-
-        /*
-         * Hace las tablas responsive.
-         */
-
-        markdownContainer
-          .querySelectorAll("table")
-          .forEach(
-            table => {
-
-              if (
-                table.parentElement
-                  .classList
-                  .contains(
-                    "table-wrapper"
-                  )
-              ) {
-
-                return;
-
-              }
-
-
-              const wrapper =
-                document.createElement(
-                  "div"
-                );
-
-
-              wrapper.className =
-                "table-wrapper";
-
-
-              table.parentNode
-                .insertBefore(
-                  wrapper,
-                  table
-                );
-
-
-              wrapper.appendChild(
-                table
-              );
-
-            }
-          );
-
-
-        /*
-         * Genera IDs previsibles para las secciones
-         * importantes.
-         */
-
-        markdownContainer
-          .querySelectorAll(
-            "h1, h2, h3"
-          )
-          .forEach(
-            heading => {
-
-              const text =
-                heading
-                  .textContent
-                  .toLowerCase();
-
-
-              if (
-                text.includes(
-                  "arquitectura tecnológica"
-                )
-              ) {
-
-                heading.id =
-                  "arquitectura";
-
-              }
-
-
-              if (
-                text.includes(
-                  "índice oficial de herramientas de tecnolatino"
-                )
-              ) {
-
-                heading.id =
-                  "tecnolatino";
-
-              }
-
-
-              if (
-                text.includes(
-                  "índice oficial de herramientas de laptops renovadas"
-                )
-              ) {
-
-                heading.id =
-                  "laptops-renovadas";
-
-              }
-
-
-              if (
-                text.includes(
-                  "suites de contexto local"
-                )
-              ) {
-
-                heading.id =
-                  "suites";
-
-              }
-
-
-              if (
-                text.includes(
-                  "nota de seguridad"
-                )
-              ) {
-
-                heading.id =
-                  "seguridad";
-
-              }
-
-
-              if (
-                text.includes(
-                  "inventario actual"
-                )
-              ) {
-
-                heading.id =
-                  "inventario-actual";
-
-              }
-
-            }
-          );
-
-
-        /*
-         * Evita mostrar dos títulos principales:
-         * uno ya está en el HERO.
-         */
-
-        const firstH1 =
-          markdownContainer
-            .querySelector("h1");
-
-
-        if (
-          firstH1 &&
-          firstH1
-            .textContent
-            .includes(
-              "Suite de Auditoría Forense"
-            )
-        ) {
-
-          firstH1.style.display =
-            "none";
-
-        }
-
-      } catch (error) {
-
-        console.error(
-          error
-        );
-
-
-        markdownContainer.innerHTML =
-          `
-          <div class="error">
-
-            <strong>
-              No fue posible cargar README.md.
-            </strong>
-
-            <p>
-              Comprueba que
-              <code>README.md</code>
-              y
-              <code>index.html</code>
-              estén en la raíz del mismo repositorio.
-            </p>
-
-          </div>
-          `;
-
-      }
-
-    }
-
-
-    cargarREADME();
-
-  </script>
+<h3>
+📱
+<a
+  href="https://tecnolatino.com/herramientas/"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+Suite de Herramientas de TecnoLatino
+</a>
+</h3>
+
+<p>
+Centraliza <strong>52 herramientas</strong> de software utilitario,
+telefonía móvil, conectividad, privacidad, ciberseguridad, IA,
+viajes tecnológicos y resiliencia familiar.
+</p>
+
+<p>
+Los resultados compatibles pueden integrarse con:
+</p>
+
+
+<h3>
+🧠
+<a
+  href="https://tecnolatino.com/mi-tecnologia/"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+Mi Tecnología
+</a>
+</h3>
+
+<p>
+Un panel local que organiza herramientas, resultados y rutas de
+diagnóstico para reutilizar contexto técnico dentro del navegador.
+</p>
+
+
+<h3>
+💻
+<a
+  href="https://laptopsrenovadas.com/herramientas/"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+Suite de Herramientas de Laptops Renovadas
+</a>
+</h3>
+
+<p>
+Unifica <strong>35 herramientas</strong> de control de calidad,
+selección, diagnóstico físico, hardware, tasación y auditoría
+de laptops usadas o reacondicionadas.
+</p>
+
+<p>
+El ecosistema está especialmente orientado a equipos comprados
+en mercados como Amazon Renewed, eBay, Swappa y vendedores de
+hardware empresarial reacondicionado.
+</p>
+
+
+<h3>
+💻
+<a
+  href="https://laptopsrenovadas.com/mi-laptop/"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+Mi Laptop
+</a>
+</h3>
+
+<p>
+Panel local para registrar pruebas, diagnósticos, rutas de revisión,
+estado conocido del equipo y actividad reciente.
+</p>
+
+
+<hr>
+
+
+<h1>
+🗂️ Catálogo Forense Completo y Enlaces de Utilidad Pública
+</h1>
+
+
+<h1 id="tecnolatino-herramientas">
+📱 1. Índice Oficial de Herramientas de TecnoLatino — 52 Soluciones
+</h1>
+
+<p>
+Acceso directo a los módulos del laboratorio web de TecnoLatino.
+</p>
+
+
+<h2>
+🖥️ Hardware y Rendimiento de PC
+</h2>
+
+<ul>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/techcheck/"
+target="_blank"
+rel="noopener noreferrer"
+>TechCheck</a>
+</strong><br>
+Diagnóstico general de problemas en PC, laptop, Android y iPhone.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/verificador-windows-11/"
+target="_blank"
+rel="noopener noreferrer"
+>Verificador Windows 11</a>
+</strong><br>
+Comprueba si el hardware de una computadora cumple los requisitos
+relevantes de Windows 11.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/decodificador-de-procesadores/"
+target="_blank"
+rel="noopener noreferrer"
+>Decodificador de Procesadores</a>
+</strong><br>
+Interpreta nomenclaturas y generaciones de procesadores Intel y AMD.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/ram-calculator/"
+target="_blank"
+rel="noopener noreferrer"
+>RAM Calculator</a>
+</strong><br>
+Calcula cuánta memoria RAM puede necesitar un usuario según
+aplicaciones y perfil de uso.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/storage-calculator/"
+target="_blank"
+rel="noopener noreferrer"
+>Storage Calculator</a>
+</strong><br>
+Estima cuánto almacenamiento conviene según documentos,
+fotografías, aplicaciones, juegos y otros usos.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/cuantas-fotos-caben/"
+target="_blank"
+rel="noopener noreferrer"
+>¿Cuántas Fotos Caben?</a>
+</strong><br>
+Convierte una capacidad de almacenamiento en una estimación
+de fotografías, videos y otros archivos.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/consumo-electrico-de-tu-pc/"
+target="_blank"
+rel="noopener noreferrer"
+>Consumo Eléctrico de tu PC</a>
+</strong><br>
+Estima el consumo eléctrico y costo diario, mensual y anual
+de una computadora.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/reparar-o-comprar/"
+target="_blank"
+rel="noopener noreferrer"
+>¿Reparar o Comprar?</a>
+</strong><br>
+Ayuda a decidir si conviene reparar un dispositivo o sustituirlo
+según costo, antigüedad y contexto.
+</li>
+
+</ul>
+
+
+<h2>
+📱 Telefonía, IMEI, Celulares Usados y Conectividad Móvil
+</h2>
+
+<ul>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/verificador-de-imei/"
+target="_blank"
+rel="noopener noreferrer"
+>Verificador de IMEI</a>
+</strong><br>
+Analiza la estructura e información disponible de la identidad
+IMEI de un celular.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/cuantos-anos-le-quedan-a-tu-celular/"
+target="_blank"
+rel="noopener noreferrer"
+>¿Cuántos Años le Quedan a tu Celular?</a>
+</strong><br>
+Estima el horizonte de soporte y actualizaciones de seguridad
+de smartphones.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/calculadora-de-datos-moviles/"
+target="_blank"
+rel="noopener noreferrer"
+>Calculadora de Datos Móviles</a>
+</strong><br>
+Estima cuántos GB mensuales puede necesitar una línea móvil.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/costo-real-contrato-celular-vs-prepago/"
+target="_blank"
+rel="noopener noreferrer"
+>¿Contrato vs Prepago?</a>
+</strong><br>
+Compara costos y condiciones de planes de contrato frente a
+opciones prepago.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/mi-telefono-tiene-esim-y-esta-liberado/"
+target="_blank"
+rel="noopener noreferrer"
+>¿Tu Celular Tiene eSIM y Está Liberado?</a>
+</strong><br>
+Ayuda a comprobar compatibilidad con eSIM y requisitos
+relacionados con el desbloqueo del dispositivo.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/mi-celular-funciona-en-estados-unidos/"
+target="_blank"
+rel="noopener noreferrer"
+>¿Mi Celular Funciona en Estados Unidos?</a>
+</strong><br>
+Evalúa compatibilidad de un celular con redes y operadores
+de Estados Unidos.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/portabilidad-numerica-estados-unidos/"
+target="_blank"
+rel="noopener noreferrer"
+>Portabilidad Numérica en Estados Unidos</a>
+</strong><br>
+Guía interactiva para evaluar los requisitos antes de transferir
+un número entre operadores.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/mejor-plan-celular-estados-unidos/"
+target="_blank"
+rel="noopener noreferrer"
+>¿Qué Plan Celular Me Conviene en Estados Unidos?</a>
+</strong><br>
+Asesor para comparar necesidades de datos, líneas, cobertura,
+presupuesto y uso internacional.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/verificar-bloqueos-gestion-celular/"
+target="_blank"
+rel="noopener noreferrer"
+>¿Este Celular Sigue Vinculado a Otro Dueño o Empresa?</a>
+</strong><br>
+Auditoría guiada de Activation Lock, FRP, MDM y otras señales
+de gestión o propiedad anterior.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/auditor-piezas-reparaciones-celular/"
+target="_blank"
+rel="noopener noreferrer"
+>Auditor de Piezas y Reparaciones del Celular</a>
+</strong><br>
+Ayuda a revisar componentes reemplazados, reparaciones anteriores
+y funciones críticas antes de comprar un celular usado.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/analizador-salud-bateria-celular/"
+target="_blank"
+rel="noopener noreferrer"
+>Analizador Avanzado de Salud de Batería del Celular</a>
+</strong><br>
+Interpreta capacidad, ciclos, desgaste y otros indicadores
+disponibles de la batería de un smartphone.
+</li>
+
+</ul>
+
+
+<h2>
+🌐 Redes, WiFi y Conectividad Doméstica
+</h2>
+
+<ul>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/internet-calculator/"
+target="_blank"
+rel="noopener noreferrer"
+>Internet Calculator</a>
+</strong><br>
+Calcula qué velocidad de Internet puede necesitar un hogar según
+personas, dispositivos y actividades.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/test-de-velocidad/"
+target="_blank"
+rel="noopener noreferrer"
+>Test de Velocidad de Internet</a>
+</strong><br>
+Mide parámetros relevantes del rendimiento de una conexión a Internet.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/cual-es-mi-ip/"
+target="_blank"
+rel="noopener noreferrer"
+>¿Cuál es Mi IP?</a>
+</strong><br>
+Muestra la dirección IP pública y explica información relacionada
+con la conexión.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/tiempo-de-descarga/"
+target="_blank"
+rel="noopener noreferrer"
+>Tiempo de Descarga</a>
+</strong><br>
+Calcula cuánto puede tardar en descargarse un archivo según
+tamaño y velocidad disponible.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/diagnostico-dns/"
+target="_blank"
+rel="noopener noreferrer"
+>Diagnóstico DNS de un Dominio</a>
+</strong><br>
+Ayuda a revisar configuración DNS y registros relevantes de un dominio.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/optimizador-de-wifi-para-tu-casa/"
+target="_blank"
+rel="noopener noreferrer"
+>Optimizador de WiFi para tu Casa</a>
+</strong><br>
+Diagnóstico guiado para identificar obstáculos, ubicación deficiente
+del router y problemas de cobertura doméstica.
+</li>
+
+</ul>
+
+
+<h2>
+🛡️ Ciberseguridad, Privacidad y Contención de Fraudes
+</h2>
+
+<ul>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/scamcheck/"
+target="_blank"
+rel="noopener noreferrer"
+>ScamCheck</a>
+</strong><br>
+Analiza mensajes sospechosos, SMS y señales frecuentes de estafa.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/me-estan-espiando-el-celular/"
+target="_blank"
+rel="noopener noreferrer"
+>¿Te Están Espiando el Celular?</a>
+</strong><br>
+Diagnóstico guiado de privacidad móvil sin necesidad de instalar
+software adicional.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/privacy-check/"
+target="_blank"
+rel="noopener noreferrer"
+>Privacy Check</a>
+</strong><br>
+Revisión estructurada de privacidad y seguridad digital.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/contrasenas-filtrada/"
+target="_blank"
+rel="noopener noreferrer"
+>Verificador de Contraseñas Filtradas</a>
+</strong><br>
+Ayuda a comprobar exposición de credenciales mediante técnicas
+diseñadas para minimizar la divulgación de la contraseña.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/generador-de-contrasenas/"
+target="_blank"
+rel="noopener noreferrer"
+>Generador de Contraseñas</a>
+</strong><br>
+Genera contraseñas aleatorias y configurables.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/verificar-sitio-web/"
+target="_blank"
+rel="noopener noreferrer"
+>Verificar Sitio Web</a>
+</strong><br>
+Ayuda a evaluar señales de confianza y riesgo antes de interactuar
+con un sitio web.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/linkcheck-analizador-de-enlaces/"
+target="_blank"
+rel="noopener noreferrer"
+>LinkCheck — Analizador de Enlaces</a>
+</strong><br>
+Examina URLs y características relevantes antes de abrir enlaces
+potencialmente sospechosos.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/analizar-cabeceras-correo/"
+target="_blank"
+rel="noopener noreferrer"
+>Analizador de Cabeceras de Correo</a>
+</strong><br>
+Interpreta encabezados técnicos de correo electrónico para investigar
+rutas, autenticación y posibles señales de suplantación.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/verificar-hash-archivo/"
+target="_blank"
+rel="noopener noreferrer"
+>Verificador de Archivos por Hash</a>
+</strong><br>
+Calcula y compara firmas criptográficas para comprobar integridad
+de archivos.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/metadatos-de-fotos/"
+target="_blank"
+rel="noopener noreferrer"
+>Metadatos de Fotos — EXIF</a>
+</strong><br>
+Examina localmente metadatos disponibles dentro de fotografías.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/me-estan-espiando-el-wifi/"
+target="_blank"
+rel="noopener noreferrer"
+>¿Me Están Espiando el WiFi de Casa?</a>
+</strong><br>
+Diagnóstico guiado de seguridad inalámbrica y señales de acceso
+no autorizado.
+</li>
+
+</ul>
+
+
+<h2>
+🤖 Productividad, IA, Finanzas, Viajes y Resiliencia Familiar
+</h2>
+
+<ul>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/constructor-de-prompts/"
+target="_blank"
+rel="noopener noreferrer"
+>Constructor de Prompts</a>
+</strong><br>
+Ayuda a estructurar instrucciones más claras y útiles para sistemas
+de inteligencia artificial.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/desintoxicador-de-textos-de-ia/"
+target="_blank"
+rel="noopener noreferrer"
+>Desintoxicador de Textos de IA</a>
+</strong><br>
+Ayuda a revisar textos sintéticos y reducir patrones de redacción
+excesivamente robóticos.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/traductor-codigos-de-error/"
+target="_blank"
+rel="noopener noreferrer"
+>Traductor de Códigos de Error</a>
+</strong><br>
+Interpreta códigos de error y los convierte en explicaciones y
+próximos pasos comprensibles.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/explicame-esta-factura/"
+target="_blank"
+rel="noopener noreferrer"
+>Explícame esta Factura</a>
+</strong><br>
+Ayuda a interpretar cargos y conceptos de facturas de celular
+o Internet.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/generador-codigo-qr/"
+target="_blank"
+rel="noopener noreferrer"
+>Generador de Código QR Gratis</a>
+</strong><br>
+Genera códigos QR para enlaces, WiFi, WhatsApp y otros usos.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/le-sirve-alla-compatibilidad-aparatos/"
+target="_blank"
+rel="noopener noreferrer"
+>¿Le Sirve Allá?</a>
+</strong><br>
+Evalúa compatibilidad eléctrica y tecnológica de dispositivos
+cuando se utilizarán en otro país.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/armador-de-vuelos/"
+target="_blank"
+rel="noopener noreferrer"
+>Armador de Vuelos USA ↔ Latinoamérica</a>
+</strong><br>
+Herramienta para organizar y comparar alternativas de rutas
+aéreas entre Estados Unidos y Latinoamérica.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/esim-vs-roaming-chip-local/"
+target="_blank"
+rel="noopener noreferrer"
+>eSIM vs Roaming vs Chip Local</a>
+</strong><br>
+Compara alternativas de conectividad móvil para viajes internacionales.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/puedo-llevar-esto-en-el-avion/"
+target="_blank"
+rel="noopener noreferrer"
+>¿Puedo Llevar Esto en el Avión?</a>
+</strong><br>
+Guía interactiva sobre dispositivos electrónicos, baterías
+y equipaje tecnológico.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/plan-de-emergencia-digital-familiar/"
+target="_blank"
+rel="noopener noreferrer"
+>Plan de Emergencia Digital Familiar</a>
+</strong><br>
+Ayuda a organizar acceso de emergencia, recuperación de cuentas
+y continuidad digital familiar.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/checklist-preparar-celular-antes-de-vender/"
+target="_blank"
+rel="noopener noreferrer"
+>Checklist para Preparar tu Celular Antes de Venderlo</a>
+</strong><br>
+Organiza los pasos que conviene completar antes de vender,
+regalar, enviar o reciclar un smartphone.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/recuperar-cuenta-hackeada/"
+target="_blank"
+rel="noopener noreferrer"
+>Cómo Recuperar una Cuenta Hackeada</a>
+</strong><br>
+Flujo de recuperación y contención para cuentas comprometidas,
+bloqueadas o sin acceso.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/regla-3-2-1-1-0-copias-seguridad/"
+target="_blank"
+rel="noopener noreferrer"
+>Cómo Proteger tus Datos con la Regla 3-2-1-1-0</a>
+</strong><br>
+Guía para construir una estrategia de copias de seguridad resistente
+a pérdida, fallos y ransomware.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/test-de-mouse/"
+target="_blank"
+rel="noopener noreferrer"
+>Test de Mouse</a>
+</strong><br>
+Comprueba botones, clics y rueda de desplazamiento del mouse.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/test-de-mecanografia/"
+target="_blank"
+rel="noopener noreferrer"
+>Test de Mecanografía</a>
+</strong><br>
+Mide velocidad de escritura y palabras por minuto.
+</li>
+
+<li>
+<strong>
+<a
+href="https://tecnolatino.com/mi-celular-en-casa/"
+target="_blank"
+rel="noopener noreferrer"
+>Mi Celular en Casa</a>
+</strong><br>
+Diagnóstico de dependencia digital del hogar, conectividad,
+privacidad, seguridad, fraude y continuidad cuando el teléfono
+es una pieza crítica de la vida familiar.
+</li>
+
+</ul>
+
+
+<hr>
+
+
+<h1 id="laptops-herramientas">
+💻 2. Índice Oficial de Herramientas de Laptops Renovadas — 35 Soluciones
+</h1>
+
+<p>
+Acceso directo a los módulos para selección, compra, diagnóstico
+y mantenimiento de laptops renovadas o usadas.
+</p>
+
+
+<h2>
+🎯 Necesidades, Elección y Compatibilidad
+</h2>
+
+<ul>
+
+<li>
+<strong>
+<a
+href="https://laptopsrenovadas.com/laptop-finder/"
+target="_blank"
+rel="noopener noreferrer"
+>Laptop Finder</a>
+</strong><br>
+Recomienda el tipo de laptop y especificaciones adecuadas según
+presupuesto, uso y necesidades.
+</li>
+
+<li>
+<strong>
+<a
+href="https://laptopsrenovadas.com/ram-calculator/"
+target="_blank"
+rel="noopener noreferrer"
+>RAM Calculator</a>
+</strong><br>
+Calcula cuánta memoria RAM conviene según las aplicaciones
+y actividades del usuario.
+</li>
+
+<li>
+<strong>
+<a
+href="https://laptopsrenovadas.com/storage-calculator/"
+target="_blank"
+rel="noopener noreferrer"
+>Storage Calculator</a>
+</strong><br>
+Calcula cuánto almacenamiento SSD puede necesitar un usuario
+según sus archivos y aplicaciones.
+</li>
+
+<li>
+<strong>
+<a
+href="https://laptopsrenovadas.com/servira-para-lo-que-hago/"
+target="_blank"
+rel="noopener noreferrer"
+>¿Servirá para lo que Hago?</a>
+</strong><br>
+Traduce actividades y aplicaciones concretas en requisitos
+prácticos de procesador, RAM y almacenamiento.
+</li>
+
+</ul>
+
+
+<h2>
+💰 Compra, Precio, Riesgo y Decisión
+</h2>
+
+<ul>
+
+<li>
+<strong>
+<a
+href="https://laptopsrenovadas.com/renovada-vs-nueva/"
+target="_blank"
+rel="noopener noreferrer"
+>Renovada vs Nueva</a>
+</strong><br>
+Compara una laptop renovada frente a una nueva según
+el escenario introducido.
+</li>
+
+<li>
+<strong>
+<a
+href="https://laptopsrenovadas.com/es-buen-precio/"
+target="_blank"
+rel="noopener noreferrer"
+>¿Es Buen Precio?</a>
+</strong><br>
+Ayuda a evaluar si el precio de una laptop usada o renovada
+tiene sentido según sus características.
+</li>
+
+<li>
+<strong>
+<a
+href="https://laptopsrenovadas.com/cuanto-vale-mi-laptop/"
+target="_blank"
+rel="noopener noreferrer"
+>¿Cuánto Vale mi Laptop?</a>
+</strong><br>
+Estima un rango de valor orientativo de mercado para una laptop.
+</li>
+
+<li>
+<strong>
+<a
+href="https://laptopsrenovadas.com/calculadora-ahorro-laptop-nueva-vs-renovada/"
+target="_blank"
+rel="noopener noreferrer"
+>Calculadora de Ahorro Laptop Nueva vs Renovada</a>
+</strong><br>
+Compara el ahorro potencial entre comprar una laptop nueva
+y una renovada.
+</li>
+
+<li>
+<strong>
+<a
+href="https://laptopsrenovadas.com/que-dice-realmente-este-anuncio/"
+target="_blank"
+rel="noopener noreferrer"
+>¿Qué Dice Realmente Este Anuncio?</a>
+</strong><br>
+Ayuda a interpretar anuncios de venta y términos técnicos
+utilizados por vendedores de laptops.
+</li>
+
+<li>
+<strong>
+<a
+href="https://laptopsrenovadas.com/simulador-vida-util-laptop-renovada/"
+target="_blank"
+rel="noopener noreferrer"
+>Simulador de Vida Útil de una Laptop Renovada</a>
+</strong><br>
+Estima el horizonte de uso práctico según procesador,
+RAM, batería y otros factores.
+</li>
+
+<li>
+<strong>
+<a
+href="https://laptopsrenovadas.com/decisor-grado-amazon-renewed/"
+target="_blank"
+rel="noopener noreferrer"
+>Decisor de Grado Amazon Renewed</a>
+</strong><br>
+Ayuda a interpretar condiciones y grados utilizados en laptops renovadas.
+</li>
+
+<li>
+<strong>
+<a
+href="https://laptopsrenovadas.com/score-riesgo-compra-laptop-renovada/"
+target="_blank"
+rel="noopener noreferrer"
+>Score de Riesgo de Compra de Laptop Renovada</a>
+</strong><br>
+Evalúa señales de riesgo antes de realizar una compra.
+</li>
+
+<li>
+<strong>
+<a
+href="https://laptopsrenovadas.com/devuelvo-o-me-quedo-laptop-renovada/"
+target="_blank"
+rel="noopener noreferrer"
+>¿La Devuelvo o Me la Quedo?</a>
+</strong><br>
+Ayuda a decidir si conviene conservar o devolver una laptop renovada
+después de evaluarla.
+</li>
+
+<li>
+<strong>
+<a
+href="https://laptopsrenovadas.com/calculadora-costo-laptop-usa-tu-pais/"
+target="_blank"
+rel="noopener noreferrer"
+>¿Cuánto te Cuesta de Verdad en tu País?</a>
+</strong><br>
+Calcula el costo final aproximado de comprar una laptop en
+Estados Unidos y llevarla a otro país.
+</li>
+
+</ul>
+
+
+<h2>
+🧪 Pruebas, Diagnóstico y Revisión del Equipo
+</h2>
+
+<ul>
+
+<li>
+<strong>
+<a
+href="https://laptopsrenovadas.com/checklist-de-laptop-usada/"
+target="_blank"
+rel="noopener noreferrer"
+>Checklist de Laptop Usada</a>
+</strong><br>
+Organiza la inspección general de una laptop usada o renovada
+antes de decidir conservarla.
+</li>
+
+<li>
+<strong>
+<a
+href="https://laptopsrenovadas.com/battery-health/"
+target="_blank"
+rel="noopener noreferrer"
+>Battery Health</a>
+</strong><br>
+Calcula e interpreta el estado de salud de la batería utilizando
+capacidad de diseño y capacidad de carga disponible.
+</li>
+
+<li>
+<strong>
+<a
+href="https://laptopsrenovadas.com/test-de-pantalla-y-pixeles-muertos/"
+target="_blank"
+rel="noopener noreferrer"
+>Test de Pantalla y Píxeles Muertos</a>
+</strong><br>
+Guía una prueba visual para detectar píxeles muertos y defectos
+visibles de pantalla.
+</li>
+
+<li>
+<strong>
+<a
+href="https://laptopsrenovadas.com/test-de-teclado/"
+target="_blank"
+rel="noopener noreferrer"
+>Test de Teclado</a>
+</strong><br>
+Permite probar teclas directamente desde el navegador
+y registrar el alcance de la prueba.
+</li>
+
+<li>
+<strong>
+<a
+href="https://laptopsrenovadas.com/test-de-webcam/"
+target="_blank"
+rel="noopener noreferrer"
+>Test de Webcam</a>
+</strong><br>
+Comprueba detección y funcionamiento básico de la cámara web.
+</li>
+
+<li>
+<strong>
+<a
+href="https://laptopsrenovadas.com/test-de-microfono/"
+target="_blank"
+rel="noopener noreferrer"
+>Test de Micrófono</a>
+</strong><br>
+Comprueba captura de audio del micrófono desde el navegador.
+</li>
+
+<li>
+<strong>
+<a
+href="https://laptopsrenovadas.com/test-de-altavoces/"
+target="_blank"
+rel="noopener noreferrer"
+>Test de Altavoces</a>
+</strong><br>
+Ejecuta una prueba de audio para comprobar funcionamiento y canales
+de los altavoces.
+</li>
+
+<li>
+<strong>
+<a
+href="https://laptopsrenovadas.com/mi-laptop-se-calienta-diagnostico/"
+target="_blank"
+rel="noopener noreferrer"
+>Diagnóstico de Temperatura</a>
+</strong><br>
+Ayuda a interpretar síntomas de calentamiento y posibles causas térmicas.
+</li>
+
+<li>
+<strong>
+<a
+href="https://laptopsrenovadas.com/test-estres-cpu-laptop/"
+target="_blank"
+rel="noopener noreferrer"
+>Test de Estrés CPU y Estabilidad</a>
+</strong><br>
+Somete el procesador a una carga controlada para observar estabilidad
+y caídas sostenidas de rendimiento.
+</li>
+
+<li>
+<strong>
+<a
+href="https://laptopsrenovadas.com/analizador-salud-ssd-smart/"
+target="_blank"
+rel="noopener noreferrer"
+>Analizador de Salud SSD y S.M.A.R.T.</a>
+</strong><br>
+Interpreta reportes de PowerShell, CrystalDiskInfo o
+<code>smartctl</code> para evaluar desgaste, errores,
+temperatura y otros indicadores del almacenamiento.
+</li>
+
+<li>
+<strong>
+<a
+href="https://laptopsrenovadas.com/verificar-bloqueos-gestion-laptop/"
+target="_blank"
+rel="noopener noreferrer"
+>Verificador de Bloqueos y Gestión Anterior</a>
+</strong><br>
+Guía una revisión de BIOS/UEFI, Microsoft Entra, MDM,
+Autopilot y, en equipos Apple, Activation Lock y gestión
+de dispositivos.
+</li>
+
+<li>
+<strong>
+<a
+href="https://laptopsrenovadas.com/teclado-us-vs-latinoamerica-laptop-renovada/"
+target="_blank"
+rel="noopener noreferrer"
+>Teclado US vs Latinoamérica</a>
+</strong><br>
+Identifica teclados ANSI US, ISO Latinoamérica/España
+o equipos con stickers y recomienda una distribución adecuada
+para Windows o macOS.
+</li>
+
+</ul>
+
+
+<h2>
+🧩 Hardware, Identificación, Puertos y Mejoras
+</h2>
+
+<ul>
+
+<li>
+<strong>
+<a
+href="https://laptopsrenovadas.com/decodificador-de-laptops-empresariales/"
+target="_blank"
+rel="noopener noreferrer"
+>Decodificador de Laptops Empresariales</a>
+</strong><br>
+Interpreta familias, modelos y generaciones de laptops empresariales.
+</li>
+
+<li>
+<strong>
+<a
+href="https://laptopsrenovadas.com/decodificador-de-macbook/"
+target="_blank"
+rel="noopener noreferrer"
+>Decodificador de MacBook</a>
+</strong><br>
+Ayuda a interpretar modelos y generaciones de computadoras MacBook.
+</li>
+
+<li>
+<strong>
+<a
+href="https://laptopsrenovadas.com/comparador-procesadores-laptop-renovada/"
+target="_blank"
+rel="noopener noreferrer"
+>Comparador de Procesadores Intel vs AMD</a>
+</strong><br>
+Compara procesadores para escenarios prácticos de uso
+en laptops renovadas.
+</li>
+
+<li>
+<strong>
+<a
+href="https://laptopsrenovadas.com/asesor-de-mejoras/"
+target="_blank"
+rel="noopener noreferrer"
+>Asesor de Mejoras</a>
+</strong><br>
+Prioriza mejoras de hardware como RAM, SSD o batería
+según el equipo y las necesidades del usuario.
+</li>
+
+<li>
+<strong>
+<a
+href="https://laptopsrenovadas.com/que-puerto-es-este-laptop/"
+target="_blank"
+rel="noopener noreferrer"
+>¿Qué Puerto es Este?</a>
+</strong><br>
+Ayuda a identificar puertos físicos presentes en una laptop
+y qué puede conectarse a ellos.
+</li>
+
+<li>
+<strong>
+<a
+href="https://laptopsrenovadas.com/compatibilidad-dock-y-monitores/"
+target="_blank"
+rel="noopener noreferrer"
+>¿Cuántos Monitores Soporta tu Laptop y Qué Dock Necesitas?</a>
+</strong><br>
+Evalúa puertos, salidas de video y requisitos para monitores
+externos y estaciones dock.
+</li>
+
+<li>
+<strong>
+<a
+href="https://laptopsrenovadas.com/que-se-le-puede-cambiar-a-mi-laptop/"
+target="_blank"
+rel="noopener noreferrer"
+>¿Qué se le Puede Cambiar a tu Laptop?</a>
+</strong><br>
+Ayuda a identificar qué componentes pueden ser reemplazables
+o actualizables según el modelo.
+</li>
+
+<li>
+<strong>
+<a
+href="https://laptopsrenovadas.com/teclas-bios-arranque-laptop/"
+target="_blank"
+rel="noopener noreferrer"
+>Teclas para Entrar a la BIOS y al Menú de Arranque</a>
+</strong><br>
+Identifica las combinaciones habituales de acceso a BIOS/UEFI
+y menú de arranque según fabricante.
+</li>
+
+<li>
+<strong>
+<a
+href="https://laptopsrenovadas.com/verificar-service-tag-serial-garantia-laptop/"
+target="_blank"
+rel="noopener noreferrer"
+>Service Tag, Serial y Garantía</a>
+</strong><br>
+Ayuda a confirmar modelo, número de serie y rutas oficiales
+de consulta de garantía para fabricantes compatibles.
+</li>
+
+</ul>
+
+
+<hr>
+
+
+<h1 id="suites-locales">
+🧠 Suites de Contexto Local
+</h1>
+
+
+<h2>
+📱 Mi Tecnología
+</h2>
+
+<p>
+<strong>URL:</strong><br>
+
+<a
+href="https://tecnolatino.com/mi-tecnologia/"
+target="_blank"
+rel="noopener noreferrer"
+>
+https://tecnolatino.com/mi-tecnologia/
+</a>
+</p>
+
+<p>
+Organiza localmente información y resultados producidos por
+las herramientas de TecnoLatino.
+</p>
+
+<p>
+Funciones del ecosistema:
+</p>
+
+<ul>
+<li>registro de herramientas ejecutadas;</li>
+<li>resultados recientes;</li>
+<li>rutas guiadas;</li>
+<li>contexto reutilizable;</li>
+<li>seguimiento de diagnóstico;</li>
+<li>exportación e importación compatible;</li>
+<li>almacenamiento local del navegador.</li>
+</ul>
+
+
+<h2>
+💻 Mi Laptop
+</h2>
+
+<p>
+<strong>URL:</strong><br>
+
+<a
+href="https://laptopsrenovadas.com/mi-laptop/"
+target="_blank"
+rel="noopener noreferrer"
+>
+https://laptopsrenovadas.com/mi-laptop/
+</a>
+</p>
+
+<p>
+Centraliza el proceso de revisión y seguimiento de una laptop
+renovada o usada.
+</p>
+
+<p>
+Incluye:
+</p>
+
+<ul>
+<li>perfil local del equipo;</li>
+<li>estado conocido del hardware;</li>
+<li>rutas de inspección;</li>
+<li>pruebas realizadas;</li>
+<li>diagnósticos guardados;</li>
+<li>actividad reciente;</li>
+<li>decisiones de compra;</li>
+<li>información de mejoras;</li>
+<li>exportación e importación de datos locales.</li>
+</ul>
+
+
+<hr>
+
+
+<h1 id="rutas">
+🧭 Filosofía de las Rutas Guiadas
+</h1>
+
+<p>
+Las suites no se limitan a presentar una lista estática
+de utilidades.
+</p>
+
+<p>
+Las herramientas pueden agruparse en
+<strong>rutas</strong>, donde cada prueba conduce al
+siguiente paso lógico del diagnóstico.
+</p>
+
+
+<h3>
+📱 Compra de Celular Usado
+</h3>
+
+<ol>
+<li>IMEI.</li>
+<li>Bloqueos y gestión anterior.</li>
+<li>Piezas y reparaciones.</li>
+<li>Salud de batería.</li>
+<li>eSIM y liberación.</li>
+<li>Compatibilidad de red.</li>
+<li>Consumo de datos.</li>
+<li>Selección de plan.</li>
+<li>Portabilidad.</li>
+</ol>
+
+
+<h3>
+💻 Revisión de Laptop Renovada
+</h3>
+
+<ol>
+<li>Checklist general.</li>
+<li>Batería.</li>
+<li>Pantalla.</li>
+<li>Teclado.</li>
+<li>Webcam.</li>
+<li>Micrófono.</li>
+<li>Altavoces.</li>
+<li>Temperatura.</li>
+<li>Decisión de devolución.</li>
+<li>Pruebas avanzadas de estabilidad.</li>
+<li>SSD / S.M.A.R.T.</li>
+<li>Bloqueos y gestión.</li>
+<li>Configuración adicional del equipo.</li>
+</ol>
+
+
+<hr>
+
+
+<h1 id="principios">
+🔬 Principios de Diseño del Laboratorio
+</h1>
+
+
+<h3>
+1. Local-first
+</h3>
+
+<p>
+Siempre que sea técnicamente posible, el procesamiento ocurre
+en el navegador.
+</p>
+
+
+<h3>
+2. Privacidad por diseño
+</h3>
+
+<p>
+No se solicitan credenciales, contraseñas ni información sensible
+innecesaria para realizar un diagnóstico.
+</p>
+
+
+<h3>
+3. Explicabilidad
+</h3>
+
+<p>
+Las herramientas buscan explicar
+<strong>por qué</strong>
+se produce una recomendación y no limitarse a mostrar
+una puntuación.
+</p>
+
+
+<h3>
+4. Resultados reutilizables
+</h3>
+
+<p>
+Los resultados compatibles pueden formar parte del contexto
+de <strong>Mi Tecnología</strong> o <strong>Mi Laptop</strong>.
+</p>
+
+
+<h3>
+5. Diagnóstico progresivo
+</h3>
+
+<p>
+Una herramienta puede conducir a otra cuando el resultado indica
+que se necesita una comprobación adicional.
+</p>
+
+
+<h3>
+6. Interoperabilidad
+</h3>
+
+<p>
+Las herramientas utilizan identificadores estables y contratos
+de eventos dentro de sus respectivos ecosistemas.
+</p>
+
+
+<h3>
+7. Portabilidad
+</h3>
+
+<p>
+Cuando la Suite lo permite, el usuario puede exportar su
+información local para conservarla fuera del navegador.
+</p>
+
+
+<hr>
+
+
+<h1 id="seguridad">
+🔐 Nota de Seguridad
+</h1>
+
+<p>
+Las herramientas de este repositorio tienen fines de:
+</p>
+
+<ul>
+<li>diagnóstico;</li>
+<li>educación;</li>
+<li>análisis preventivo;</li>
+<li>auditoría de equipos propios o autorizados;</li>
+<li>privacidad;</li>
+<li>mantenimiento;</li>
+<li>evaluación de compras;</li>
+<li>resiliencia digital.</li>
+</ul>
+
+<p>
+No están diseñadas para:
+</p>
+
+<ul>
+<li>eludir Activation Lock;</li>
+<li>eliminar FRP sin autorización;</li>
+<li>evadir MDM corporativo;</li>
+<li>vulnerar cuentas;</li>
+<li>obtener credenciales;</li>
+<li>romper controles de acceso;</li>
+<li>acceder a dispositivos ajenos.</li>
+</ul>
+
+<p>
+Las herramientas relacionadas con bloqueos y gestión están
+diseñadas para <strong>detectar e interpretar señales de
+vinculación</strong>, no para evadirlas.
+</p>
+
+
+<hr>
+
+
+<h1>
+🌎 Ecosistema
+</h1>
+
+<h2>
+TecnoLatino
+</h2>
+
+<ul>
+
+<li>
+Sitio principal:
+<a
+href="https://tecnolatino.com/"
+target="_blank"
+rel="noopener noreferrer"
+>
+https://tecnolatino.com/
+</a>
+</li>
+
+<li>
+Herramientas:
+<a
+href="https://tecnolatino.com/herramientas/"
+target="_blank"
+rel="noopener noreferrer"
+>
+https://tecnolatino.com/herramientas/
+</a>
+</li>
+
+<li>
+Mi Tecnología:
+<a
+href="https://tecnolatino.com/mi-tecnologia/"
+target="_blank"
+rel="noopener noreferrer"
+>
+https://tecnolatino.com/mi-tecnologia/
+</a>
+</li>
+
+</ul>
+
+
+<h2>
+Laptops Renovadas
+</h2>
+
+<ul>
+
+<li>
+Sitio principal:
+<a
+href="https://laptopsrenovadas.com/"
+target="_blank"
+rel="noopener noreferrer"
+>
+https://laptopsrenovadas.com/
+</a>
+</li>
+
+<li>
+Herramientas:
+<a
+href="https://laptopsrenovadas.com/herramientas/"
+target="_blank"
+rel="noopener noreferrer"
+>
+https://laptopsrenovadas.com/herramientas/
+</a>
+</li>
+
+<li>
+Mi Laptop:
+<a
+href="https://laptopsrenovadas.com/mi-laptop/"
+target="_blank"
+rel="noopener noreferrer"
+>
+https://laptopsrenovadas.com/mi-laptop/
+</a>
+</li>
+
+</ul>
+
+
+<hr>
+
+
+<h1 id="inventario-actual">
+📊 Inventario Actual
+</h1>
+
+<table>
+
+<thead>
+<tr>
+<th>Ecosistema</th>
+<th>Herramientas</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>📱 TecnoLatino</td>
+<td><strong>52</strong></td>
+</tr>
+
+<tr>
+<td>💻 Laptops Renovadas</td>
+<td><strong>35</strong></td>
+</tr>
+
+<tr>
+<td><strong>Total combinado</strong></td>
+<td><strong>87</strong></td>
+</tr>
+
+</tbody>
+
+</table>
+
+
+<hr>
+
+
+<h1>
+📜 Licencia
+</h1>
+
+<p>
+Consulta el archivo <code>LICENSE</code> del repositorio
+para conocer las condiciones de reutilización, distribución
+y modificación del código.
+</p>
+
+
+<hr>
+
+
+<h1>
+🤝 Contribuciones
+</h1>
+
+<p>
+Las contribuciones son bienvenidas cuando respeten los
+principios fundamentales del proyecto:
+</p>
+
+<ul>
+<li>privacidad por diseño;</li>
+<li>procesamiento local cuando sea posible;</li>
+<li>explicabilidad;</li>
+<li>accesibilidad;</li>
+<li>seguridad;</li>
+<li>minimización de datos;</li>
+<li>ausencia de técnicas de evasión de controles de acceso.</li>
+</ul>
+
+<p>
+Antes de enviar cambios, revisa la estructura del proyecto
+y evita introducir dependencias que obliguen a transmitir
+información sensible a servicios externos sin una justificación
+técnica clara.
+</p>
+
+
+<hr>
+
+
+<h2>
+🧰 Total del Laboratorio
+</h2>
+
+<p>
+<strong>87 herramientas públicas</strong>
+</p>
+
+<ul>
+
+<li>
+<strong>52 herramientas en TecnoLatino</strong>
+</li>
+
+<li>
+<strong>35 herramientas en Laptops Renovadas</strong>
+</li>
+
+<li>
+<strong>2 suites de contexto local</strong>
+
+<ul>
+<li>Mi Tecnología</li>
+<li>Mi Laptop</li>
+</ul>
+
+</li>
+
+<li>
+múltiples rutas de diagnóstico y decisión;
+</li>
+
+<li>
+procesamiento local y almacenamiento privado siempre que
+la función lo permite.
+</li>
+
+</ul>
+
+<p>
+El objetivo del ecosistema es transformar una colección
+de utilidades independientes en un laboratorio técnico coherente
+para diagnóstico, prevención, compra informada y resiliencia digital.
+</p>
+
+
+</main>
+
+
+<aside
+  class="side"
+  aria-label="Índice rápido"
+>
+
+<strong>
+Índice rápido
+</strong>
+
+<a href="#privacidad">
+🔒 Privacidad
+</a>
+
+<a href="#ecosistema">
+🧭 Ecosistema
+</a>
+
+<a href="#tecnolatino-herramientas">
+📱 TecnoLatino · 52
+</a>
+
+<a href="#laptops-herramientas">
+💻 Laptops Renovadas · 35
+</a>
+
+<a href="#suites-locales">
+🧠 Suites locales
+</a>
+
+<a href="#rutas">
+🧭 Rutas
+</a>
+
+<a href="#seguridad">
+🔐 Seguridad
+</a>
+
+<a href="#inventario-actual">
+📊 Inventario
+</a>
+
+</aside>
+
+</div>
+
+
+<footer class="footer">
+
+Suite de Auditoría Forense ·
+TecnoLatino + Laptops Renovadas ·
+Sitio estático para GitHub + Vercel
+
+</footer>
 
 </body>
 </html>
