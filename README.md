@@ -29,7 +29,7 @@ El laboratorio se divide en dos grandes suites de diagnóstico y decisión que f
 
 ### 📱 [Suite de Herramientas de TecnoLatino](https://tecnolatino.com/herramientas/)
 
-Centraliza **52 herramientas** de software utilitario, telefonía móvil, conectividad, privacidad, ciberseguridad, IA, viajes tecnológicos y resiliencia familiar.
+Centraliza **53 herramientas** de software utilitario, telefonía móvil, conectividad, privacidad, ciberseguridad, IA, viajes tecnológicos y resiliencia familiar.
 
 Los resultados compatibles pueden integrarse con:
 
@@ -41,7 +41,7 @@ Un panel local que organiza herramientas, resultados y rutas de diagnóstico par
 
 ### 💻 [Suite de Herramientas de Laptops Renovadas](https://laptopsrenovadas.com/herramientas/)
 
-Unifica **35 herramientas** de control de calidad, selección, diagnóstico físico, hardware, tasación y auditoría de laptops usadas o reacondicionadas.
+Unifica **36 herramientas** de control de calidad, selección, diagnóstico físico, hardware, tasación y auditoría de laptops usadas o reacondicionadas.
 
 El ecosistema está especialmente orientado a equipos comprados en mercados como Amazon Renewed, eBay, Swappa y vendedores de hardware empresarial reacondicionado.
 
@@ -57,7 +57,7 @@ Panel local para registrar pruebas, diagnósticos, rutas de revisión, estado co
 
 ---
 
-# 📱 1. Índice Oficial de Herramientas de TecnoLatino — 52 Soluciones
+# 📱 1. Índice Oficial de Herramientas de TecnoLatino — 53 Soluciones
 
 Acceso directo a los módulos del laboratorio web de TecnoLatino.
 
@@ -131,7 +131,7 @@ Acceso directo a los módulos del laboratorio web de TecnoLatino.
 ## 🌐 Redes, WiFi y Conectividad Doméstica
 
 * **[Internet Calculator](https://tecnolatino.com/internet-calculator/)**  
-  Calcula qué velocidad de Internet puede necesitar un hogar según personas, dispositivos y actividades.
+  Calcula qué velocidad de Internet puede necesitar un hogar según personas, dispositivos, actividades simultáneas y necesidades de descarga/subida, incluyendo gaming, streaming y videollamadas.
 
 * **[Test de Velocidad de Internet](https://tecnolatino.com/test-de-velocidad/)**  
   Mide parámetros relevantes del rendimiento de una conexión a Internet.
@@ -147,6 +147,9 @@ Acceso directo a los módulos del laboratorio web de TecnoLatino.
 
 * **[Optimizador de WiFi para tu Casa](https://tecnolatino.com/optimizador-de-wifi-para-tu-casa/)**  
   Diagnóstico guiado para identificar obstáculos, ubicación deficiente del router y problemas de cobertura doméstica.
+
+* **[¿Funciona con tu Smart Home? Verificador de Compatibilidad](https://tecnolatino.com/compatibilidad-smart-home/)**  
+  Cruza ecosistema, protocolo e infraestructura para comprobar compatibilidad con Matter, Thread, Alexa, Google Home, Apple Home, SmartThings, Zigbee y Z-Wave.
 
 ---
 
@@ -239,7 +242,7 @@ Acceso directo a los módulos del laboratorio web de TecnoLatino.
 
 ---
 
-# 💻 2. Índice Oficial de Herramientas de Laptops Renovadas — 35 Soluciones
+# 💻 2. Índice Oficial de Herramientas de Laptops Renovadas — 36 Soluciones
 
 Acceso directo a los módulos para selección, compra, diagnóstico y mantenimiento de laptops renovadas o usadas.
 
@@ -296,6 +299,9 @@ Acceso directo a los módulos para selección, compra, diagnóstico y mantenimie
 ---
 
 ## 🧪 Pruebas, Diagnóstico y Revisión del Equipo
+
+* **[Auditoría Express de Laptop](https://laptopsrenovadas.com/auditoria-express-laptop/)**  
+  Ejecuta un recolector local de PowerShell de solo lectura y convierte su resultado en un diagnóstico estructurado de Windows, hardware, batería, almacenamiento, seguridad y señales de gestión, sin depender de una cuenta obligatoria.
 
 * **[Checklist de Laptop Usada](https://laptopsrenovadas.com/checklist-de-laptop-usada/)**  
   Organiza la inspección general de una laptop usada o renovada antes de decidir conservarla.
@@ -362,7 +368,7 @@ Acceso directo a los módulos para selección, compra, diagnóstico y mantenimie
   Identifica las combinaciones habituales de acceso a BIOS/UEFI y menú de arranque según fabricante.
 
 * **[Service Tag, Serial y Garantía](https://laptopsrenovadas.com/verificar-service-tag-serial-garantia-laptop/)**  
-  Ayuda a confirmar modelo, número de serie y rutas oficiales de consulta de garantía para fabricantes compatibles.
+  Ayuda a confirmar modelo, número de serie y rutas oficiales de consulta de garantía para Dell, Lenovo, HP, Apple, Microsoft Surface, ASUS, Acer y Samsung/Galaxy Book cuando existe un flujo oficial disponible.
 
 ---
 
@@ -434,21 +440,23 @@ Una ruta puede combinar:
 
 ### 💻 Revisión de Laptop Renovada
 
-Una ruta puede combinar:
+La ruta de revisión puede combinar:
 
-1. Checklist general.
-2. Batería.
-3. Pantalla.
-4. Teclado.
-5. Webcam.
-6. Micrófono.
-7. Altavoces.
-8. Temperatura.
-9. Decisión de devolución.
-10. Pruebas avanzadas de estabilidad.
-11. SSD / S.M.A.R.T.
-12. Bloqueos y gestión.
-13. Configuración adicional del equipo.
+1. Auditoría Express.
+2. Checklist general.
+3. Service Tag, serial y garantía.
+4. Batería.
+5. Pantalla.
+6. Teclado.
+7. Distribución de teclado US vs Latinoamérica.
+8. Webcam.
+9. Micrófono.
+10. Altavoces.
+11. Temperatura.
+12. Test de estrés CPU y estabilidad.
+13. SSD / S.M.A.R.T.
+14. Bloqueos y gestión anterior.
+15. Decisión final: devolverla o quedársela.
 
 ---
 
@@ -533,9 +541,9 @@ Las herramientas relacionadas con bloqueos y gestión están diseñadas para **d
 
 | Ecosistema | Herramientas |
 |---|---:|
-| 📱 TecnoLatino | **52** |
-| 💻 Laptops Renovadas | **35** |
-| **Total combinado** | **87** |
+| 📱 TecnoLatino | **53** |
+| 💻 Laptops Renovadas | **36** |
+| **Total combinado** | **89** |
 
 ---
 
@@ -563,10 +571,10 @@ Antes de enviar cambios, revisa la estructura del proyecto y evita introducir de
 
 ## 🧰 Total del Laboratorio
 
-**87 herramientas públicas**
+**89 herramientas públicas**
 
-* **52 herramientas en TecnoLatino**
-* **35 herramientas en Laptops Renovadas**
+* **53 herramientas en TecnoLatino**
+* **36 herramientas en Laptops Renovadas**
 * **2 suites de contexto local**
   * Mi Tecnología
   * Mi Laptop
