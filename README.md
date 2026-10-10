@@ -4,22 +4,62 @@
 [![Privacidad](https://shields.io)](#-arquitectura-tecnológica-y-privacidad)
 [![Ecosistema](https://shields.io)](#-estructura-del-ecosistema-unificado)
 
-Un repositorio público e indexable que centraliza herramientas interactivas, scripts de diagnóstico y utilidades web avanzadas para la auditoría técnica de dispositivos móviles, laptops reacondicionadas, ciberseguridad ciudadana, conectividad y resiliencia digital.
+Un repositorio público e indexable que centraliza herramientas interactivas, recolectores locales, scripts de diagnóstico y utilidades web avanzadas para la auditoría técnica de dispositivos móviles, laptops reacondicionadas, ciberseguridad ciudadana, conectividad y resiliencia digital.
 
-La mayor parte del procesamiento técnico se realiza directamente en el navegador. Cuando una herramienta necesita consultar información externa —por ejemplo red, DNS, compatibilidad o servicios públicos— se limita a los datos necesarios para ejecutar esa función.
+La mayor parte del procesamiento técnico se realiza directamente en el navegador o en el propio dispositivo mediante recolectores locales. Cuando una herramienta necesita consultar información externa —por ejemplo red, DNS, compatibilidad o servicios públicos— se limita a los datos necesarios para ejecutar esa función.
+
+---
+
+## 📌 Menú del Ecosistema
+
+### Suites principales
+
+- [📱 Suite de Herramientas de TecnoLatino](https://tecnolatino.com/herramientas/)
+- [🧠 Mi Tecnología](https://tecnolatino.com/mi-tecnologia/)
+- [💻 Suite de Herramientas de Laptops Renovadas](https://laptopsrenovadas.com/herramientas/)
+- [💻 Mi Laptop](https://laptopsrenovadas.com/mi-laptop/)
+
+### Laptops Renovadas — herramientas destacadas
+
+- [⚡ Auditoría Express de Laptop](https://laptopsrenovadas.com/auditoria-express-laptop/)
+- [🔐 Verificador de Bloqueos y Gestión Anterior](https://laptopsrenovadas.com/verificar-bloqueos-gestion-laptop/)
+- [🚀 Primer Arranque de tu Laptop Renovada](https://laptopsrenovadas.com/primer-arranque-laptop-renovada-latino/)
+- [✅ Checklist de Laptop Usada](https://laptopsrenovadas.com/checklist-de-laptop-usada/)
+- [💾 Analizador de Salud SSD y S.M.A.R.T.](https://laptopsrenovadas.com/analizador-salud-ssd-smart/)
+- [🔋 Battery Health](https://laptopsrenovadas.com/battery-health/)
+- [🍎 Decodificador de MacBook](https://laptopsrenovadas.com/decodificador-de-macbook/)
+- [↩️ ¿La Devuelvo o Me la Quedo?](https://laptopsrenovadas.com/devuelvo-o-me-quedo-laptop-renovada/)
+
+### Documentación
+
+- [Arquitectura y privacidad](#-arquitectura-tecnológica-y-privacidad)
+- [Estructura del ecosistema](#-estructura-del-ecosistema-unificado)
+- [Índice TecnoLatino](#-1-índice-oficial-de-herramientas-de-tecnolatino--55-soluciones)
+- [Índice Laptops Renovadas](#-2-índice-oficial-de-herramientas-de-laptops-renovadas--37-soluciones)
+- [Mejoras recientes de Auditoría Express](#-auditoría-express-multiplataforma--windows--macos)
+- [Suites de contexto local](#-suites-de-contexto-local)
+- [Rutas guiadas](#-filosofía-de-las-rutas-guiadas)
+- [Principios de diseño](#-principios-de-diseño-del-laboratorio)
+- [Nota de seguridad](#-nota-de-seguridad)
+- [Inventario actual](#-inventario-actual)
 
 ---
 
 ## 🔒 Arquitectura Tecnológica y Privacidad
 
-A diferencia de plataformas tradicionales que requieren cuentas permanentes o perfiles centralizados, este ecosistema prioriza una arquitectura **local-first** y la soberanía digital:
+A diferencia de plataformas tradicionales que requieren cuentas permanentes o perfiles centralizados, este ecosistema prioriza una arquitectura **local-first**, la minimización de datos y la soberanía digital:
 
 * **Sin cuenta obligatoria:** Las suites principales pueden utilizarse sin crear una cuenta de usuario.
 * **Persistencia local:** El historial técnico y el contexto de las suites se almacenan principalmente en el navegador mediante tecnologías como `IndexedDB`.
 * **Portabilidad:** Los módulos compatibles permiten exportar, importar o borrar los datos técnicos locales.
 * **Procesamiento local:** Diagnósticos, cálculos y análisis compatibles se ejecutan directamente en el dispositivo del usuario.
+* **Recolectores locales:** Cuando una auditoría requiere información del sistema operativo, puede utilizar scripts de solo lectura que generan evidencia estructurada localmente.
 * **Minimización de datos:** Las herramientas están diseñadas para solicitar solamente la información necesaria para producir el diagnóstico.
 * **Resultados reutilizables:** Las suites **Mi Tecnología** y **Mi Laptop** permiten que distintas herramientas compartan contexto técnico local sin obligar al usuario a repetir información innecesariamente.
+* **Evidencia cruzada:** Cuando una herramienta ya obtuvo una señal técnica útil, otras herramientas compatibles pueden reutilizarla como contexto sin convertirla automáticamente en una comprobación manual completada.
+* **Estados desconocidos explícitos:** La ausencia de evidencia no se interpreta automáticamente como un resultado favorable. Un dato desconocido permanece desconocido hasta que pueda comprobarse.
+* **Sin transmisión implícita:** Los recolectores locales de Auditoría Express están diseñados para funcionar sin enviar por iniciativa propia los resultados a servicios remotos.
+* **Privacidad por diseño:** No se pretende recopilar credenciales, contraseñas, cuentas completas, perfiles MDM completos ni identificadores organizacionales innecesarios.
 
 ---
 
@@ -45,11 +85,13 @@ Unifica **37 herramientas** de control de calidad, selección, diagnóstico fís
 
 El ecosistema está especialmente orientado a equipos comprados en mercados como Amazon Renewed, eBay, Swappa y vendedores de hardware empresarial reacondicionado.
 
+La suite incorpora una arquitectura de diagnóstico progresivo en la que herramientas automáticas y comprobaciones manuales pueden reutilizar evidencia técnica sin presentar como certeza aquello que el sistema operativo no pudo confirmar.
+
 Los resultados compatibles se organizan dentro de:
 
 ### 💻 [Mi Laptop](https://laptopsrenovadas.com/mi-laptop/)
 
-Panel local para registrar pruebas, diagnósticos, rutas de revisión, estado conocido del equipo y actividad reciente.
+Panel local para registrar pruebas, diagnósticos, rutas de revisión, estado conocido del equipo, actividad reciente y evidencia obtenida por herramientas como Auditoría Express.
 
 ---
 
@@ -254,354 +296,77 @@ Acceso directo a los módulos para selección, compra, diagnóstico y mantenimie
 
 ---
 
-## 🎯 Necesidades, Elección y Compatibilidad
+## 🆕 Auditoría Express Multiplataforma — Windows + macOS
 
-* **[Laptop Finder](https://laptopsrenovadas.com/laptop-finder/)**  
-  Recomienda el tipo de laptop y especificaciones adecuadas según presupuesto, uso y necesidades.
+La evolución de **Auditoría Express** incorpora soporte nativo para Windows y macOS dentro de una misma herramienta y sin aumentar artificialmente el inventario público de la Suite.
 
-* **[RAM Calculator](https://laptopsrenovadas.com/ram-calculator/)**  
-  Calcula cuánta memoria RAM conviene según las aplicaciones y actividades del usuario.
+### 🪟 Windows
 
-* **[Storage Calculator](https://laptopsrenovadas.com/storage-calculator/)**  
-  Calcula cuánto almacenamiento SSD puede necesitar un usuario según sus archivos y aplicaciones.
+Utiliza un recolector local de PowerShell de solo lectura para obtener evidencia estructurada sobre:
 
-* **[¿Servirá para lo que Hago?](https://laptopsrenovadas.com/servira-para-lo-que-hago/)**  
-  Traduce actividades y aplicaciones concretas en requisitos prácticos de procesador, RAM y almacenamiento.
-
----
-
-## 💰 Compra, Precio, Riesgo y Decisión
-
-* **[Renovada vs Nueva](https://laptopsrenovadas.com/renovada-vs-nueva/)**  
-  Compara una laptop renovada frente a una nueva según el escenario introducido.
-
-* **[¿Es Buen Precio?](https://laptopsrenovadas.com/es-buen-precio/)**  
-  Ayuda a evaluar si el precio de una laptop usada o renovada tiene sentido según sus características.
-
-* **[¿Cuánto Vale mi Laptop?](https://laptopsrenovadas.com/cuanto-vale-mi-laptop/)**  
-  Estima un rango de valor orientativo de mercado para una laptop.
-
-* **[Calculadora de Ahorro Laptop Nueva vs Renovada](https://laptopsrenovadas.com/calculadora-ahorro-laptop-nueva-vs-renovada/)**  
-  Compara el ahorro potencial entre comprar una laptop nueva y una renovada.
-
-* **[¿Qué Dice Realmente Este Anuncio?](https://laptopsrenovadas.com/que-dice-realmente-este-anuncio/)**  
-  Ayuda a interpretar anuncios de venta y términos técnicos utilizados por vendedores de laptops.
-
-* **[Simulador de Vida Útil de una Laptop Renovada](https://laptopsrenovadas.com/simulador-vida-util-laptop-renovada/)**  
-  Estima el horizonte de uso práctico de una laptop renovada y añade una expectativa orientativa de mantenimiento a 12 y 24 meses para batería, teclado, bisagras y chasis, almacenamiento y comportamiento térmico. Utiliza patrones generales y contexto del equipo sin presentar sus resultados como probabilidades exactas de fallo.
-
-* **[Decisor de Grado Amazon Renewed](https://laptopsrenovadas.com/decisor-grado-amazon-renewed/)**  
-  Ayuda a interpretar condiciones y grados utilizados en laptops renovadas.
-
-* **[Score de Riesgo de Compra de Laptop Renovada](https://laptopsrenovadas.com/score-riesgo-compra-laptop-renovada/)**  
-  Evalúa señales de riesgo antes de realizar una compra.
-
-* **[¿La Devuelvo o Me la Quedo?](https://laptopsrenovadas.com/devuelvo-o-me-quedo-laptop-renovada/)**  
-  Ayuda a decidir si conviene conservar o devolver una laptop renovada después de evaluarla.
-
-* **[¿Cuánto te Cuesta de Verdad en tu País?](https://laptopsrenovadas.com/calculadora-costo-laptop-usa-tu-pais/)**  
-  Calcula el costo final aproximado de comprar una laptop en Estados Unidos y llevarla a otro país.
-
----
-
-## 🧪 Pruebas, Diagnóstico y Revisión del Equipo
-
-* **[Auditoría Express de Laptop](https://laptopsrenovadas.com/auditoria-express-laptop/)**  
-  Ejecuta un recolector local de PowerShell de solo lectura y convierte su resultado en un diagnóstico estructurado de Windows, hardware, batería, almacenamiento, seguridad y señales de gestión, sin depender de una cuenta obligatoria.
-
-* **[Primer Arranque de tu Laptop Renovada](https://laptopsrenovadas.com/primer-arranque-laptop-renovada-latino/)**  
-  Organiza las primeras dos horas de configuración de una laptop renovada según Windows o macOS. Revisa bloqueos y propiedad antes de introducir datos personales y guía idioma, teclado, cuenta, red, actualizaciones, activación y comprobaciones básicas.
-
-* **[Checklist de Laptop Usada](https://laptopsrenovadas.com/checklist-de-laptop-usada/)**  
-  Organiza la inspección general de una laptop usada o renovada antes de decidir conservarla.
-
-* **[Battery Health](https://laptopsrenovadas.com/battery-health/)**  
-  Calcula e interpreta el estado de salud de la batería utilizando capacidad de diseño y capacidad de carga disponible.
-
-* **[Test de Pantalla y Píxeles Muertos](https://laptopsrenovadas.com/test-de-pantalla-y-pixeles-muertos/)**  
-  Guía una prueba visual para detectar píxeles muertos y defectos visibles de pantalla.
-
-* **[Test de Teclado](https://laptopsrenovadas.com/test-de-teclado/)**  
-  Permite probar teclas directamente desde el navegador y registrar el alcance de la prueba.
-
-* **[Test de Webcam](https://laptopsrenovadas.com/test-de-webcam/)**  
-  Comprueba detección y funcionamiento básico de la cámara web.
-
-* **[Test de Micrófono](https://laptopsrenovadas.com/test-de-microfono/)**  
-  Comprueba captura de audio del micrófono desde el navegador.
-
-* **[Test de Altavoces](https://laptopsrenovadas.com/test-de-altavoces/)**  
-  Ejecuta una prueba de audio para comprobar funcionamiento y canales de los altavoces.
-
-* **[Diagnóstico de Temperatura](https://laptopsrenovadas.com/mi-laptop-se-calienta-diagnostico/)**  
-  Ayuda a interpretar síntomas de calentamiento y posibles causas térmicas.
-
-* **[Test de Estrés CPU y Estabilidad](https://laptopsrenovadas.com/test-estres-cpu-laptop/)**  
-  Somete el procesador a una carga controlada para observar estabilidad y caídas sostenidas de rendimiento.
-
-* **[Analizador de Salud SSD y S.M.A.R.T.](https://laptopsrenovadas.com/analizador-salud-ssd-smart/)**  
-  Interpreta reportes de PowerShell, CrystalDiskInfo o `smartctl` para evaluar desgaste, errores, temperatura y otros indicadores del almacenamiento.
-
-* **[Verificador de Bloqueos y Gestión Anterior](https://laptopsrenovadas.com/verificar-bloqueos-gestion-laptop/)**  
-  Guía una revisión de BIOS/UEFI, Microsoft Entra, MDM, Autopilot y, en equipos Apple, Activation Lock y gestión de dispositivos.
-
-* **[Teclado US vs Latinoamérica](https://laptopsrenovadas.com/teclado-us-vs-latinoamerica-laptop-renovada/)**  
-  Identifica teclados ANSI US, ISO Latinoamérica/España o equipos con stickers y recomienda una distribución adecuada para Windows o macOS.
-
----
-
-## 🧩 Hardware, Identificación, Puertos y Mejoras
-
-* **[Decodificador de Laptops Empresariales](https://laptopsrenovadas.com/decodificador-de-laptops-empresariales/)**  
-  Interpreta familias, modelos y generaciones de laptops empresariales.
-
-* **[Decodificador de MacBook](https://laptopsrenovadas.com/decodificador-de-macbook/)**  
-  Ayuda a interpretar modelos y generaciones de computadoras MacBook.
-
-* **[Comparador de Procesadores Intel vs AMD](https://laptopsrenovadas.com/comparador-procesadores-laptop-renovada/)**  
-  Compara procesadores para escenarios prácticos de uso en laptops renovadas.
-
-* **[Asesor de Mejoras](https://laptopsrenovadas.com/asesor-de-mejoras/)**  
-  Prioriza mejoras de hardware como RAM, SSD o batería según el equipo y las necesidades del usuario.
-
-* **[¿Qué Puerto es Este?](https://laptopsrenovadas.com/que-puerto-es-este-laptop/)**  
-  Ayuda a identificar puertos físicos presentes en una laptop y qué puede conectarse a ellos.
-
-* **[¿Cuántos Monitores Soporta tu Laptop y Qué Dock Necesitas?](https://laptopsrenovadas.com/compatibilidad-dock-y-monitores/)**  
-  Evalúa puertos, salidas de video y requisitos para monitores externos y estaciones dock.
-
-* **[¿Qué se le Puede Cambiar a tu Laptop?](https://laptopsrenovadas.com/que-se-le-puede-cambiar-a-mi-laptop/)**  
-  Ayuda a identificar qué componentes pueden ser reemplazables o actualizables según el modelo.
-
-* **[Teclas para Entrar a la BIOS y al Menú de Arranque](https://laptopsrenovadas.com/teclas-bios-arranque-laptop/)**  
-  Identifica las combinaciones habituales de acceso a BIOS/UEFI y menú de arranque según fabricante.
-
-* **[Service Tag, Serial y Garantía](https://laptopsrenovadas.com/verificar-service-tag-serial-garantia-laptop/)**  
-  Ayuda a confirmar modelo, número de serie y rutas oficiales de consulta de garantía para Dell, Lenovo, HP, Apple, Microsoft Surface, ASUS, Acer y Samsung/Galaxy Book cuando existe un flujo oficial disponible.
-
----
-
-# 🧠 Suites de Contexto Local
-
-## 📱 Mi Tecnología
-
-**URL:**  
-https://tecnolatino.com/mi-tecnologia/
-
-Organiza localmente información y resultados producidos por las herramientas de TecnoLatino.
-
-Funciones del ecosistema:
-
-* registro de herramientas ejecutadas;
-* resultados recientes;
-* rutas guiadas;
-* contexto reutilizable;
-* seguimiento de diagnóstico;
-* exportación e importación compatible;
-* almacenamiento local del navegador.
-
----
-
-## 💻 Mi Laptop
-
-**URL:**  
-https://laptopsrenovadas.com/mi-laptop/
-
-Centraliza el proceso de revisión y seguimiento de una laptop renovada o usada.
-
-Incluye:
-
-* perfil local del equipo;
-* estado conocido del hardware;
-* rutas de inspección;
-* pruebas realizadas;
-* diagnósticos guardados;
-* actividad reciente;
-* decisiones de compra;
-* información de mejoras;
-* exportación e importación de datos locales.
-
----
-
-# 🧭 Filosofía de las Rutas Guiadas
-
-Las suites no se limitan a presentar una lista estática de utilidades.
-
-Las herramientas pueden agruparse en **rutas**, donde cada prueba conduce al siguiente paso lógico del diagnóstico.
-
-Ejemplos:
-
-### 📱 Compra de Celular Usado
-
-Una ruta puede combinar:
-
-1. IMEI.
-2. Bloqueos y gestión anterior.
-3. Piezas y reparaciones.
-4. Salud de batería.
-5. eSIM y liberación.
-6. Compatibilidad de red.
-7. Consumo de datos.
-8. Selección de plan.
-9. Portabilidad.
-
----
-
-### 💻 Revisión de Laptop Renovada
-
-La ruta de revisión puede combinar:
-
-1. Auditoría Express.
-2. Checklist general.
-3. Service Tag, serial y garantía.
-4. Batería.
-5. Pantalla.
-6. Teclado.
-7. Distribución de teclado US vs Latinoamérica.
-8. Webcam.
-9. Micrófono.
-10. Altavoces.
-11. Temperatura.
-12. Test de estrés CPU y estabilidad.
-13. SSD / S.M.A.R.T.
-14. Bloqueos y gestión anterior.
-15. Decisión final: devolverla o quedársela.
-
----
-
-### 🚀 Primeras 2 Horas con una Laptop Renovada
-
-Una ruta de configuración inicial puede combinar:
-
-1. Primer Arranque de tu Laptop Renovada.
-2. Verificación de bloqueos y gestión anterior.
-3. Configuración de idioma y distribución del teclado.
-4. Prueba física del teclado.
-5. Revisión de batería y estado inicial del equipo.
-
-La prioridad de esta ruta es comprobar primero propiedad, gestión y estado básico antes de introducir cuentas personales, documentos o información sensible en un equipo recién recibido.
-
----
-
-# 🔬 Principios de Diseño del Laboratorio
-
-El proyecto sigue varios principios técnicos:
-
-### 1. Local-first
-
-Siempre que sea técnicamente posible, el procesamiento ocurre en el navegador.
-
-### 2. Privacidad por diseño
-
-No se solicitan credenciales, contraseñas ni información sensible innecesaria para realizar un diagnóstico.
-
-### 3. Explicabilidad
-
-Las herramientas buscan explicar **por qué** se produce una recomendación y no limitarse a mostrar una puntuación.
-
-### 4. Resultados reutilizables
-
-Los resultados compatibles pueden formar parte del contexto de **Mi Tecnología** o **Mi Laptop**.
-
-### 5. Diagnóstico progresivo
-
-Una herramienta puede conducir a otra cuando el resultado indica que se necesita una comprobación adicional.
-
-### 6. Interoperabilidad
-
-Las herramientas utilizan identificadores estables y contratos de eventos dentro de sus respectivos ecosistemas.
-
-### 7. Portabilidad
-
-Cuando la Suite lo permite, el usuario puede exportar su información local para conservarla fuera del navegador.
-
----
-
-# 🔐 Nota de Seguridad
-
-Las herramientas de este repositorio tienen fines de:
-
-* diagnóstico;
-* educación;
-* análisis preventivo;
-* auditoría de equipos propios o autorizados;
-* privacidad;
-* mantenimiento;
-* evaluación de compras;
-* resiliencia digital.
-
-No están diseñadas para:
-
-* eludir Activation Lock;
-* eliminar FRP sin autorización;
-* evadir MDM corporativo;
-* vulnerar cuentas;
-* obtener credenciales;
-* romper controles de acceso;
-* acceder a dispositivos ajenos.
-
-Las herramientas relacionadas con bloqueos y gestión están diseñadas para **detectar e interpretar señales de vinculación**, no para evadirlas.
-
----
-
-# 🌎 Ecosistema
-
-## TecnoLatino
-
-* Sitio principal: https://tecnolatino.com/
-* Herramientas: https://tecnolatino.com/herramientas/
-* Mi Tecnología: https://tecnolatino.com/mi-tecnologia/
-
-## Laptops Renovadas
-
-* Sitio principal: https://laptopsrenovadas.com/
-* Herramientas: https://laptopsrenovadas.com/herramientas/
-* Mi Laptop: https://laptopsrenovadas.com/mi-laptop/
-
----
-
-# 📊 Inventario Actual
-
-| Ecosistema | Herramientas |
-|---|---:|
-| 📱 TecnoLatino | **55** |
-| 💻 Laptops Renovadas | **37** |
-| **Total combinado** | **92** |
-
----
-
-# 📜 Licencia
-
-Consulta el archivo `LICENSE` del repositorio para conocer las condiciones de reutilización, distribución y modificación del código.
-
----
-
-# 🤝 Contribuciones
-
-Las contribuciones son bienvenidas cuando respeten los principios fundamentales del proyecto:
-
-* privacidad por diseño;
-* procesamiento local cuando sea posible;
-* explicabilidad;
-* accesibilidad;
+* procesador;
+* memoria;
+* batería;
+* almacenamiento;
+* S.M.A.R.T.;
 * seguridad;
-* minimización de datos;
-* ausencia de técnicas de evasión de controles de acceso.
+* señales de gestión;
+* información técnica compatible con el diagnóstico posterior.
 
-Antes de enviar cambios, revisa la estructura del proyecto y evita introducir dependencias que obliguen a transmitir información sensible a servicios externos sin una justificación técnica clara.
+### 🍎 macOS
 
----
+Utiliza un recolector local nativo para macOS basado en herramientas incluidas por Apple, como:
 
-## 🧰 Total del Laboratorio
+* `system_profiler`;
+* `sysctl`;
+* `ioreg`;
+* `diskutil`;
+* `profiles`;
+* `fdesetup`;
+* utilidades de seguridad disponibles en el sistema.
 
-**92 herramientas públicas**
+El recolector macOS puede obtener, cuando el propio sistema expone la información:
 
-* **55 herramientas en TecnoLatino**
-* **37 herramientas en Laptops Renovadas**
-* **2 suites de contexto local**
-  * Mi Tecnología
-  * Mi Laptop
-* múltiples rutas de diagnóstico, configuración, prevención y decisión;
-* procesamiento local y almacenamiento privado siempre que la función lo permite.
+* modelo técnico del Mac;
+* nombre amigable del equipo;
+* Apple Silicon o arquitectura Intel;
+* chip/procesador;
+* memoria unificada o memoria disponible;
+* versión y build de macOS;
+* ciclos de batería;
+* capacidad máxima;
+* condición de batería;
+* SSD físico subyacente al contenedor APFS;
+* capacidad física y capacidad utilizable;
+* S.M.A.R.T.;
+* desgaste NVMe cuando está disponible;
+* temperatura del almacenamiento;
+* FileVault;
+* SIP;
+* estado local de inscripción MDM;
+* información local relacionada con ADE, anteriormente conocido como DEP;
+* estado de Activation Lock únicamente cuando macOS expone evidencia concluyente.
 
-El objetivo del ecosistema es transformar una colección de utilidades independientes en un laboratorio técnico coherente para diagnóstico, prevención, compra informada, configuración segura, recuperación y resiliencia digital.
+### 🔎 Principio de evidencia conservadora
+
+Auditoría Express no transforma automáticamente una ausencia de datos en una conclusión favorable.
+
+Por ejemplo:
+
+* `Activation Lock desconocido` no significa desactivado.
+* `MDM no inscrito actualmente` no significa que el equipo nunca haya estado administrado.
+* una consulta local que no indique ADE no descarta por sí sola una asignación organizacional externa;
+* un dato no disponible no se convierte en `0`, `false` o “sin riesgo”.
+
+### 💾 SSD físico y NVMe
+
+En macOS, la herramienta intenta resolver la relación:
+
+```text
+APFS Container
+      ↓
+Physical Store
+      ↓
+Whole Disk
+      ↓
+SSD físico
