@@ -29,7 +29,7 @@ El laboratorio se divide en dos grandes suites de diagnóstico y decisión que f
 
 ### 📱 [Suite de Herramientas de TecnoLatino](https://tecnolatino.com/herramientas/)
 
-Centraliza **53 herramientas** de software utilitario, telefonía móvil, conectividad, privacidad, ciberseguridad, IA, viajes tecnológicos y resiliencia familiar.
+Centraliza **55 herramientas** de software utilitario, telefonía móvil, conectividad, privacidad, ciberseguridad, IA, viajes tecnológicos, resiliencia familiar y protección de identidad digital.
 
 Los resultados compatibles pueden integrarse con:
 
@@ -41,7 +41,7 @@ Un panel local que organiza herramientas, resultados y rutas de diagnóstico par
 
 ### 💻 [Suite de Herramientas de Laptops Renovadas](https://laptopsrenovadas.com/herramientas/)
 
-Unifica **36 herramientas** de control de calidad, selección, diagnóstico físico, hardware, tasación y auditoría de laptops usadas o reacondicionadas.
+Unifica **37 herramientas** de control de calidad, selección, diagnóstico físico, hardware, tasación, configuración inicial y auditoría de laptops usadas o reacondicionadas.
 
 El ecosistema está especialmente orientado a equipos comprados en mercados como Amazon Renewed, eBay, Swappa y vendedores de hardware empresarial reacondicionado.
 
@@ -57,7 +57,7 @@ Panel local para registrar pruebas, diagnósticos, rutas de revisión, estado co
 
 ---
 
-# 📱 1. Índice Oficial de Herramientas de TecnoLatino — 53 Soluciones
+# 📱 1. Índice Oficial de Herramientas de TecnoLatino — 55 Soluciones
 
 Acceso directo a los módulos del laboratorio web de TecnoLatino.
 
@@ -158,6 +158,12 @@ Acceso directo a los módulos del laboratorio web de TecnoLatino.
 * **[ScamCheck](https://tecnolatino.com/scamcheck/)**  
   Analiza mensajes sospechosos, SMS y señales frecuentes de estafa.
 
+* **[Protocolo de Llamada Sospechosa](https://tecnolatino.com/protocolo-llamada-sospechosa/)**  
+  Protocolo interactivo para responder a llamadas que dicen provenir de bancos, gobierno, inmigración, familiares, soporte técnico u otras fuentes sensibles. Ayuda a decidir cuándo colgar, verificar por un canal independiente, proteger cuentas y documentar lo ocurrido sin compartir datos innecesarios.
+
+* **[Mapa de Identidad de mi Número](https://tecnolatino.com/mapa-identidad-mi-numero/)**  
+  Evalúa cuántas áreas de la vida digital dependen de un mismo número telefónico y calcula por separado la dependencia del número y la resiliencia de recuperación. Organiza banca y 2FA, mensajería, trabajo, escuela y métodos alternativos de recuperación sin solicitar el número real.
+
 * **[¿Te Están Espiando el Celular?](https://tecnolatino.com/me-estan-espiando-el-celular/)**  
   Diagnóstico guiado de privacidad móvil sin necesidad de instalar software adicional.
 
@@ -242,7 +248,7 @@ Acceso directo a los módulos del laboratorio web de TecnoLatino.
 
 ---
 
-# 💻 2. Índice Oficial de Herramientas de Laptops Renovadas — 36 Soluciones
+# 💻 2. Índice Oficial de Herramientas de Laptops Renovadas — 37 Soluciones
 
 Acceso directo a los módulos para selección, compra, diagnóstico y mantenimiento de laptops renovadas o usadas.
 
@@ -282,7 +288,7 @@ Acceso directo a los módulos para selección, compra, diagnóstico y mantenimie
   Ayuda a interpretar anuncios de venta y términos técnicos utilizados por vendedores de laptops.
 
 * **[Simulador de Vida Útil de una Laptop Renovada](https://laptopsrenovadas.com/simulador-vida-util-laptop-renovada/)**  
-  Estima el horizonte de uso práctico según procesador, RAM, batería y otros factores.
+  Estima el horizonte de uso práctico de una laptop renovada y añade una expectativa orientativa de mantenimiento a 12 y 24 meses para batería, teclado, bisagras y chasis, almacenamiento y comportamiento térmico. Utiliza patrones generales y contexto del equipo sin presentar sus resultados como probabilidades exactas de fallo.
 
 * **[Decisor de Grado Amazon Renewed](https://laptopsrenovadas.com/decisor-grado-amazon-renewed/)**  
   Ayuda a interpretar condiciones y grados utilizados en laptops renovadas.
@@ -302,6 +308,9 @@ Acceso directo a los módulos para selección, compra, diagnóstico y mantenimie
 
 * **[Auditoría Express de Laptop](https://laptopsrenovadas.com/auditoria-express-laptop/)**  
   Ejecuta un recolector local de PowerShell de solo lectura y convierte su resultado en un diagnóstico estructurado de Windows, hardware, batería, almacenamiento, seguridad y señales de gestión, sin depender de una cuenta obligatoria.
+
+* **[Primer Arranque de tu Laptop Renovada](https://laptopsrenovadas.com/primer-arranque-laptop-renovada-latino/)**  
+  Organiza las primeras dos horas de configuración de una laptop renovada según Windows o macOS. Revisa bloqueos y propiedad antes de introducir datos personales y guía idioma, teclado, cuenta, red, actualizaciones, activación y comprobaciones básicas.
 
 * **[Checklist de Laptop Usada](https://laptopsrenovadas.com/checklist-de-laptop-usada/)**  
   Organiza la inspección general de una laptop usada o renovada antes de decidir conservarla.
@@ -460,6 +469,20 @@ La ruta de revisión puede combinar:
 
 ---
 
+### 🚀 Primeras 2 Horas con una Laptop Renovada
+
+Una ruta de configuración inicial puede combinar:
+
+1. Primer Arranque de tu Laptop Renovada.
+2. Verificación de bloqueos y gestión anterior.
+3. Configuración de idioma y distribución del teclado.
+4. Prueba física del teclado.
+5. Revisión de batería y estado inicial del equipo.
+
+La prioridad de esta ruta es comprobar primero propiedad, gestión y estado básico antes de introducir cuentas personales, documentos o información sensible en un equipo recién recibido.
+
+---
+
 # 🔬 Principios de Diseño del Laboratorio
 
 El proyecto sigue varios principios técnicos:
@@ -541,9 +564,9 @@ Las herramientas relacionadas con bloqueos y gestión están diseñadas para **d
 
 | Ecosistema | Herramientas |
 |---|---:|
-| 📱 TecnoLatino | **53** |
-| 💻 Laptops Renovadas | **36** |
-| **Total combinado** | **89** |
+| 📱 TecnoLatino | **55** |
+| 💻 Laptops Renovadas | **37** |
+| **Total combinado** | **92** |
 
 ---
 
@@ -571,14 +594,14 @@ Antes de enviar cambios, revisa la estructura del proyecto y evita introducir de
 
 ## 🧰 Total del Laboratorio
 
-**89 herramientas públicas**
+**92 herramientas públicas**
 
-* **53 herramientas en TecnoLatino**
-* **36 herramientas en Laptops Renovadas**
+* **55 herramientas en TecnoLatino**
+* **37 herramientas en Laptops Renovadas**
 * **2 suites de contexto local**
   * Mi Tecnología
   * Mi Laptop
-* múltiples rutas de diagnóstico y decisión;
+* múltiples rutas de diagnóstico, configuración, prevención y decisión;
 * procesamiento local y almacenamiento privado siempre que la función lo permite.
 
-El objetivo del ecosistema es transformar una colección de utilidades independientes en un laboratorio técnico coherente para diagnóstico, prevención, compra informada y resiliencia digital.
+El objetivo del ecosistema es transformar una colección de utilidades independientes en un laboratorio técnico coherente para diagnóstico, prevención, compra informada, configuración segura, recuperación y resiliencia digital.
