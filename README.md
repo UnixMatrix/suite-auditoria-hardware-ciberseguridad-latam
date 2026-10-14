@@ -29,13 +29,14 @@ La mayor parte del procesamiento técnico se realiza directamente en el navegado
 - [🔋 Battery Health](https://laptopsrenovadas.com/battery-health/)
 - [🍎 Decodificador de MacBook](https://laptopsrenovadas.com/decodificador-de-macbook/)
 - [↩️ ¿La Devuelvo o Me la Quedo?](https://laptopsrenovadas.com/devuelvo-o-me-quedo-laptop-renovada/)
+- [📄 Asesor de Reclamo con Evidencia](https://laptopsrenovadas.com/reclamo-laptop-renovada-amazon-renewed/)
 
 ### Documentación
 
 - [Arquitectura y privacidad](#-arquitectura-tecnológica-y-privacidad)
 - [Estructura del ecosistema](#-estructura-del-ecosistema-unificado)
-- [Índice TecnoLatino](#-1-índice-oficial-de-herramientas-de-tecnolatino--55-soluciones)
-- [Índice Laptops Renovadas](#-2-índice-oficial-de-herramientas-de-laptops-renovadas--37-soluciones)
+- [Índice TecnoLatino](#-1-índice-oficial-de-herramientas-de-tecnolatino--56-soluciones)
+- [Índice Laptops Renovadas](#-2-índice-oficial-de-herramientas-de-laptops-renovadas--38-soluciones)
 - [Mejoras recientes de Auditoría Express](#-auditoría-express-multiplataforma--windows--macos)
 - [Suites de contexto local](#-suites-de-contexto-local)
 - [Rutas guiadas](#-filosofía-de-las-rutas-guiadas)
@@ -69,7 +70,7 @@ El laboratorio se divide en dos grandes suites de diagnóstico y decisión que f
 
 ### 📱 [Suite de Herramientas de TecnoLatino](https://tecnolatino.com/herramientas/)
 
-Centraliza **55 herramientas** de software utilitario, telefonía móvil, conectividad, privacidad, ciberseguridad, IA, viajes tecnológicos, resiliencia familiar y protección de identidad digital.
+Centraliza **56 herramientas** de software utilitario, telefonía móvil, conectividad, privacidad, ciberseguridad, IA, viajes tecnológicos, resiliencia familiar y protección de identidad digital. La Suite incorpora además protocolos interactivos de respuesta ante incidentes como llamadas sospechosas, compromiso de cuentas, SIM swap y port-out fraud.
 
 Los resultados compatibles pueden integrarse con:
 
@@ -81,7 +82,7 @@ Un panel local que organiza herramientas, resultados y rutas de diagnóstico par
 
 ### 💻 [Suite de Herramientas de Laptops Renovadas](https://laptopsrenovadas.com/herramientas/)
 
-Unifica **37 herramientas** de control de calidad, selección, diagnóstico físico, hardware, tasación, configuración inicial y auditoría de laptops usadas o reacondicionadas.
+Unifica **38 herramientas** de control de calidad, selección, diagnóstico físico, hardware, tasación, configuración inicial, decisión de devolución y preparación de reclamos con evidencia para laptops usadas o reacondicionadas.
 
 El ecosistema está especialmente orientado a equipos comprados en mercados como Amazon Renewed, eBay, Swappa y vendedores de hardware empresarial reacondicionado.
 
@@ -99,7 +100,7 @@ Panel local para registrar pruebas, diagnósticos, rutas de revisión, estado co
 
 ---
 
-# 📱 1. Índice Oficial de Herramientas de TecnoLatino — 55 Soluciones
+# 📱 1. Índice Oficial de Herramientas de TecnoLatino — 56 Soluciones
 
 Acceso directo a los módulos del laboratorio web de TecnoLatino.
 
@@ -206,6 +207,9 @@ Acceso directo a los módulos del laboratorio web de TecnoLatino.
 * **[Mapa de Identidad de mi Número](https://tecnolatino.com/mapa-identidad-mi-numero/)**  
   Evalúa cuántas áreas de la vida digital dependen de un mismo número telefónico y calcula por separado la dependencia del número y la resiliencia de recuperación. Organiza banca y 2FA, mensajería, trabajo, escuela y métodos alternativos de recuperación sin solicitar el número real.
 
+* **[Protocolo SIM swap / port-out fraud](https://tecnolatino.com/sim-swap-port-out-fraud-usa/)**  
+  Protocolo interactivo para actuar ante pérdida súbita de señal, cambio no autorizado de SIM/eSIM o transferencia fraudulenta del número en Estados Unidos. Organiza la respuesta entre operador, correo, bancos, mensajería y métodos de autenticación, distingue SIM swap de port-out fraud y no convierte una señal aislada en una confirmación automática de fraude.
+
 * **[¿Te Están Espiando el Celular?](https://tecnolatino.com/me-estan-espiando-el-celular/)**  
   Diagnóstico guiado de privacidad móvil sin necesidad de instalar software adicional.
 
@@ -290,9 +294,21 @@ Acceso directo a los módulos del laboratorio web de TecnoLatino.
 
 ---
 
-# 💻 2. Índice Oficial de Herramientas de Laptops Renovadas — 37 Soluciones
+# 💻 2. Índice Oficial de Herramientas de Laptops Renovadas — 38 Soluciones
 
 Acceso directo a los módulos para selección, compra, diagnóstico y mantenimiento de laptops renovadas o usadas.
+
+---
+
+## ↩️ Decisión, Devolución y Reclamo con Evidencia
+
+* **[¿La Devuelvo o Me la Quedo?](https://laptopsrenovadas.com/devuelvo-o-me-quedo-laptop-renovada/)**  
+  Ayuda a decidir si conviene conservar una laptop renovada, continuar observándola, utilizar una garantía o iniciar una devolución según fallos detectados, condición del equipo y plazo declarado.
+
+* **[Asesor de Reclamo con Evidencia](https://laptopsrenovadas.com/reclamo-laptop-renovada-amazon-renewed/)**  
+  Convierte resultados ya obtenidos en Mi Laptop en un paquete organizado para devolución o reclamo. Reutiliza evidencia como Battery Health, pantalla, teclado, bloqueos o gestión anterior y la decisión de devolución sin volver a ejecutar esas pruebas. Organiza qué presentar, qué fotografías conservar, qué información sensible no publicar, un texto base editable y el siguiente paso según el canal de compra, incluido Amazon Renewed y Marketplace.
+
+El **Asesor de Reclamo con Evidencia** no sustituye las pruebas técnicas ni decide automáticamente que una tienda, vendedor o marketplace esté obligado a aprobar una devolución. Su función es ordenar la evidencia existente y ayudar a presentar un caso claro después de que el diagnóstico y la decisión técnica ya se hayan realizado.
 
 ---
 
@@ -370,3 +386,4 @@ Physical Store
 Whole Disk
       ↓
 SSD físico
+```
