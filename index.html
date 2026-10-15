@@ -221,11 +221,8 @@ h1{
 }
 
 .updates-head{
-  display:flex;
-  align-items:end;
-  justify-content:space-between;
-  gap:18px;
-  margin-bottom:16px;
+  display:block;
+  margin-bottom:18px;
 }
 
 .updates-head h2{
@@ -234,10 +231,68 @@ h1{
   letter-spacing:-.035em;
 }
 
-.updates-head p{
-  max-width:650px;
+.updates-summary{
+  margin:18px 0 0;
+  padding:18px 20px;
+  border:1px solid #64e9f733;
+  background:
+    linear-gradient(135deg,rgba(100,233,247,.08),rgba(100,233,247,.025));
+  border-radius:16px;
+}
+
+.updates-summary-top{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-bottom:11px;
+}
+
+.updates-summary-label{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  padding:5px 9px;
+  border-radius:999px;
+  border:1px solid #64e9f74a;
+  background:#64e9f712;
+  color:var(--c);
+  font-size:.77rem;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:.06em;
+}
+
+.updates-summary p{
   margin:0;
+  max-width:930px;
   color:var(--m);
+  font-size:1rem;
+  line-height:1.7;
+}
+
+.updates-summary strong{
+  color:var(--t);
+}
+
+.updates-summary-tools{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-top:14px;
+}
+
+.updates-summary-tool{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  padding:7px 10px;
+  border:1px solid var(--l);
+  border-radius:10px;
+  background:rgba(7,17,31,.42);
+  color:var(--t);
+  font-size:.84rem;
+  font-weight:800;
 }
 
 .update-grid{
@@ -447,6 +502,14 @@ footer{
   .eh{
     align-items:flex-start;
     flex-direction:column;
+  }
+
+  .updates-summary{
+    padding:16px;
+  }
+
+  .updates-summary-tool{
+    width:100%;
   }
 }
 </style>
@@ -673,21 +736,40 @@ footer{
 
   <div class="updates-head">
 
-    <div>
-      <p class="ey">
-        🆕 Mejoras recientes
+    <p class="ey">
+      🆕 Mejoras recientes
+    </p>
+
+    <h2>
+      Nuevas herramientas y evolución del ecosistema
+    </h2>
+
+    <div class="updates-summary">
+
+      <div class="updates-summary-top">
+        <span class="updates-summary-label">
+          ✨ Nuevas incorporaciones
+        </span>
+      </div>
+
+      <p>
+        El laboratorio amplía sus dos ecosistemas con nuevas herramientas de decisión.
+        <strong>Laptop Score 100</strong> incorpora en Laptops Renovadas una metodología
+        estructurada para evaluar una compra antes de decidir, mientras
+        <strong>¿Puedo Trabajar Solo Desde Mi Teléfono?</strong> añade en TecnoLatino
+        un diagnóstico práctico sobre la viabilidad real de trabajar únicamente desde
+        el celular. Al mismo tiempo, <strong>Auditoría Express</strong> continúa
+        evolucionando como flujo multiplataforma para Windows y macOS bajo un principio
+        de evidencia conservadora.
       </p>
 
-      <h2>
-        Nuevas herramientas y Auditoría Express multiplataforma
-      </h2>
-    </div>
+      <div class="updates-summary-tools">
+        <span class="updates-summary-tool">📊 Laptop Score 100</span>
+        <span class="updates-summary-tool">📱 Trabajo desde el teléfono</span>
+        <span class="updates-summary-tool">⚡ Auditoría Express · Windows + macOS</span>
+      </div>
 
-    <p>
-      El laboratorio suma Laptop Score 100 en Laptops Renovadas y el asesor
-      ¿Puedo Trabajar Solo Desde Mi Teléfono? en TecnoLatino, mientras Auditoría
-      Express mantiene un mismo flujo para Windows y macOS con evidencia conservadora.
-    </p>
+    </div>
 
   </div>
 
