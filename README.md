@@ -27,6 +27,7 @@ La mayor parte del procesamiento técnico se realiza directamente en el navegado
 - [✅ Checklist de Laptop Usada](https://laptopsrenovadas.com/checklist-de-laptop-usada/)
 - [💾 Analizador de Salud SSD y S.M.A.R.T.](https://laptopsrenovadas.com/analizador-salud-ssd-smart/)
 - [🔋 Battery Health](https://laptopsrenovadas.com/battery-health/)
+- [📊 Laptop Score 100](https://laptopsrenovadas.com/laptop-score-100/)
 - [🍎 Decodificador de MacBook](https://laptopsrenovadas.com/decodificador-de-macbook/)
 - [↩️ ¿La Devuelvo o Me la Quedo?](https://laptopsrenovadas.com/devuelvo-o-me-quedo-laptop-renovada/)
 - [📄 Asesor de Reclamo con Evidencia](https://laptopsrenovadas.com/reclamo-laptop-renovada-amazon-renewed/)
@@ -35,8 +36,8 @@ La mayor parte del procesamiento técnico se realiza directamente en el navegado
 
 - [Arquitectura y privacidad](#-arquitectura-tecnológica-y-privacidad)
 - [Estructura del ecosistema](#-estructura-del-ecosistema-unificado)
-- [Índice TecnoLatino](#-1-índice-oficial-de-herramientas-de-tecnolatino--56-soluciones)
-- [Índice Laptops Renovadas](#-2-índice-oficial-de-herramientas-de-laptops-renovadas--38-soluciones)
+- [Índice TecnoLatino](#-1-índice-oficial-de-herramientas-de-tecnolatino--57-soluciones)
+- [Índice Laptops Renovadas](#-2-índice-oficial-de-herramientas-de-laptops-renovadas--39-soluciones)
 - [Mejoras recientes de Auditoría Express](#-auditoría-express-multiplataforma--windows--macos)
 - [Suites de contexto local](#-suites-de-contexto-local)
 - [Rutas guiadas](#-filosofía-de-las-rutas-guiadas)
@@ -70,7 +71,7 @@ El laboratorio se divide en dos grandes suites de diagnóstico y decisión que f
 
 ### 📱 [Suite de Herramientas de TecnoLatino](https://tecnolatino.com/herramientas/)
 
-Centraliza **56 herramientas** de software utilitario, telefonía móvil, conectividad, privacidad, ciberseguridad, IA, viajes tecnológicos, resiliencia familiar y protección de identidad digital. La Suite incorpora además protocolos interactivos de respuesta ante incidentes como llamadas sospechosas, compromiso de cuentas, SIM swap y port-out fraud.
+Centraliza **57 herramientas** de software utilitario, telefonía móvil, conectividad, privacidad, ciberseguridad, IA, viajes tecnológicos, resiliencia familiar y protección de identidad digital. La Suite incorpora además protocolos interactivos de respuesta ante incidentes como llamadas sospechosas, compromiso de cuentas, SIM swap y port-out fraud.
 
 Los resultados compatibles pueden integrarse con:
 
@@ -82,7 +83,7 @@ Un panel local que organiza herramientas, resultados y rutas de diagnóstico par
 
 ### 💻 [Suite de Herramientas de Laptops Renovadas](https://laptopsrenovadas.com/herramientas/)
 
-Unifica **38 herramientas** de control de calidad, selección, diagnóstico físico, hardware, tasación, configuración inicial, decisión de devolución y preparación de reclamos con evidencia para laptops usadas o reacondicionadas.
+Unifica **39 herramientas** de control de calidad, selección, diagnóstico físico, hardware, tasación, configuración inicial, decisión de devolución y preparación de reclamos con evidencia para laptops usadas o reacondicionadas.
 
 El ecosistema está especialmente orientado a equipos comprados en mercados como Amazon Renewed, eBay, Swappa y vendedores de hardware empresarial reacondicionado.
 
@@ -100,7 +101,7 @@ Panel local para registrar pruebas, diagnósticos, rutas de revisión, estado co
 
 ---
 
-# 📱 1. Índice Oficial de Herramientas de TecnoLatino — 56 Soluciones
+# 📱 1. Índice Oficial de Herramientas de TecnoLatino — 57 Soluciones
 
 Acceso directo a los módulos del laboratorio web de TecnoLatino.
 
@@ -159,6 +160,9 @@ Acceso directo a los módulos del laboratorio web de TecnoLatino.
 
 * **[¿Qué Plan Celular Me Conviene en Estados Unidos?](https://tecnolatino.com/mejor-plan-celular-estados-unidos/)**  
   Asesor para comparar necesidades de datos, líneas, cobertura, presupuesto y uso internacional.
+
+* **[¿Puedo Trabajar Solo Desde Mi Teléfono?](https://tecnolatino.com/puedo-trabajar-solo-desde-mi-telefono/)**  
+  Evalúa si un flujo de trabajo puede sostenerse únicamente desde el celular según aplicaciones, jornada, batería, señal, datos, documentos, respaldo y necesidad real de computadora.
 
 * **[¿Este Celular Sigue Vinculado a Otro Dueño o Empresa?](https://tecnolatino.com/verificar-bloqueos-gestion-celular/)**  
   Auditoría guiada de Activation Lock, FRP, MDM y otras señales de gestión o propiedad anterior.
@@ -294,9 +298,18 @@ Acceso directo a los módulos del laboratorio web de TecnoLatino.
 
 ---
 
-# 💻 2. Índice Oficial de Herramientas de Laptops Renovadas — 38 Soluciones
+# 💻 2. Índice Oficial de Herramientas de Laptops Renovadas — 39 Soluciones
 
 Acceso directo a los módulos para selección, compra, diagnóstico y mantenimiento de laptops renovadas o usadas.
+
+---
+
+## 📊 Compra, Evaluación y Score de Decisión
+
+* **[Laptop Score 100](https://laptopsrenovadas.com/laptop-score-100/)**  
+  Evalúa una laptop renovada con una puntuación de 0 a 100 basada en precio, batería, reparabilidad, rendimiento, soporte, condición y riesgo. Separa el Score de la confianza del diagnóstico, mantiene explícitos los datos desconocidos y aplica bloqueadores críticos cuando existe evidencia de problemas graves.
+
+El **Laptop Score 100** funciona como una capa de síntesis para comparar unidades concretas sin sustituir las herramientas especializadas de precio, riesgo, vida útil, batería, reparabilidad o revisión física.
 
 ---
 
@@ -386,4 +399,3 @@ Physical Store
 Whole Disk
       ↓
 SSD físico
-```
