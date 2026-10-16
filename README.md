@@ -36,7 +36,7 @@ La mayor parte del procesamiento técnico se realiza directamente en el navegado
 
 - [Arquitectura y privacidad](#-arquitectura-tecnológica-y-privacidad)
 - [Estructura del ecosistema](#-estructura-del-ecosistema-unificado)
-- [Índice TecnoLatino](#-1-índice-oficial-de-herramientas-de-tecnolatino--57-soluciones)
+- [Índice TecnoLatino](#-1-índice-oficial-de-herramientas-de-tecnolatino--60-soluciones)
 - [Índice Laptops Renovadas](#-2-índice-oficial-de-herramientas-de-laptops-renovadas--39-soluciones)
 - [Mejoras recientes de Auditoría Express](#-auditoría-express-multiplataforma--windows--macos)
 - [Suites de contexto local](#-suites-de-contexto-local)
@@ -71,7 +71,7 @@ El laboratorio se divide en dos grandes suites de diagnóstico y decisión que f
 
 ### 📱 [Suite de Herramientas de TecnoLatino](https://tecnolatino.com/herramientas/)
 
-Centraliza **57 herramientas** de software utilitario, telefonía móvil, conectividad, privacidad, ciberseguridad, IA, viajes tecnológicos, resiliencia familiar y protección de identidad digital. La Suite incorpora además protocolos interactivos de respuesta ante incidentes como llamadas sospechosas, compromiso de cuentas, SIM swap y port-out fraud.
+Centraliza **60 herramientas** de software utilitario, telefonía móvil, conectividad, privacidad, ciberseguridad, IA, viajes tecnológicos, resiliencia familiar y protección de identidad digital. La Suite incorpora además protocolos interactivos de respuesta ante incidentes como llamadas sospechosas, compromiso de cuentas, SIM swap y port-out fraud.
 
 Los resultados compatibles pueden integrarse con:
 
@@ -101,7 +101,7 @@ Panel local para registrar pruebas, diagnósticos, rutas de revisión, estado co
 
 ---
 
-# 📱 1. Índice Oficial de Herramientas de TecnoLatino — 57 Soluciones
+# 📱 1. Índice Oficial de Herramientas de TecnoLatino — 60 Soluciones
 
 Acceso directo a los módulos del laboratorio web de TecnoLatino.
 
@@ -211,6 +211,9 @@ Acceso directo a los módulos del laboratorio web de TecnoLatino.
 * **[Mapa de Identidad de mi Número](https://tecnolatino.com/mapa-identidad-mi-numero/)**  
   Evalúa cuántas áreas de la vida digital dependen de un mismo número telefónico y calcula por separado la dependencia del número y la resiliencia de recuperación. Organiza banca y 2FA, mensajería, trabajo, escuela y métodos alternativos de recuperación sin solicitar el número real.
 
+* **[Rescate del Autenticador](https://tecnolatino.com/autenticador-telefono-viejo/)**  
+  Guía interactiva para recuperar el acceso cuando los códigos de autenticación quedaron en un teléfono viejo, se cambió de dispositivo o se perdió el acceso al autenticador. Ayuda a identificar sincronización disponible, códigos de respaldo y rutas alternativas de recuperación.
+
 * **[Protocolo SIM swap / port-out fraud](https://tecnolatino.com/sim-swap-port-out-fraud-usa/)**  
   Protocolo interactivo para actuar ante pérdida súbita de señal, cambio no autorizado de SIM/eSIM o transferencia fraudulenta del número en Estados Unidos. Organiza la respuesta entre operador, correo, bancos, mensajería y métodos de autenticación, distingue SIM swap de port-out fraud y no convierte una señal aislada en una confirmación automática de fraude.
 
@@ -219,6 +222,9 @@ Acceso directo a los módulos del laboratorio web de TecnoLatino.
 
 * **[Privacy Check](https://tecnolatino.com/privacy-check/)**  
   Revisión estructurada de privacidad y seguridad digital.
+
+* **[Límite Laboral](https://tecnolatino.com/limite-laboral/)**  
+  Ayuda a separar cuentas, datos y accesos personales de los recursos de trabajo cuando se utiliza o devuelve un equipo corporativo. Organiza la revisión de Microsoft 365, VPN, perfiles de trabajo, MDM y otros vínculos laborales sin asumir que una señal aislada confirma gestión activa.
 
 * **[Verificador de Contraseñas Filtradas](https://tecnolatino.com/contrasenas-filtrada/)**  
   Ayuda a comprobar exposición de credenciales mediante técnicas diseñadas para minimizar la divulgación de la contraseña.
@@ -277,6 +283,9 @@ Acceso directo a los módulos del laboratorio web de TecnoLatino.
 
 * **[Plan de Emergencia Digital Familiar](https://tecnolatino.com/plan-de-emergencia-digital-familiar/)**  
   Ayuda a organizar acceso de emergencia, recuperación de cuentas y continuidad digital familiar.
+
+* **[La Llave de la Escuela](https://tecnolatino.com/la-llave-de-la-escuela/)**  
+  Ayuda a identificar qué cuenta corresponde usar para acceder a plataformas escolares y a separar el acceso del estudiante del portal de padres. Orienta la recuperación de acceso en entornos como Clever, ClassLink y Google Classroom sin mezclar credenciales ni roles.
 
 * **[Checklist para Preparar tu Celular Antes de Venderlo](https://tecnolatino.com/checklist-preparar-celular-antes-de-vender/)**  
   Organiza los pasos que conviene completar antes de vender, regalar, enviar o reciclar un smartphone.
