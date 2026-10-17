@@ -1,3 +1,4 @@
+
 # 🧰 Suite de Auditoría Forense de Hardware, Ciberseguridad Local y Resiliencia Digital
 
 [![Licencia](https://shields.io)](https://opensource.org)
@@ -36,7 +37,7 @@ La mayor parte del procesamiento técnico se realiza directamente en el navegado
 
 - [Arquitectura y privacidad](#-arquitectura-tecnológica-y-privacidad)
 - [Estructura del ecosistema](#-estructura-del-ecosistema-unificado)
-- [Índice TecnoLatino](#-1-índice-oficial-de-herramientas-de-tecnolatino--62-soluciones)
+- [Índice TecnoLatino](#-1-índice-oficial-de-herramientas-de-tecnolatino--67-soluciones)
 - [Índice Laptops Renovadas](#-2-índice-oficial-de-herramientas-de-laptops-renovadas--39-soluciones)
 - [Mejoras recientes de Auditoría Express](#-auditoría-express-multiplataforma--windows--macos)
 - [Suites de contexto local](#-suites-de-contexto-local)
@@ -71,13 +72,15 @@ El laboratorio se divide en dos grandes suites de diagnóstico y decisión que f
 
 ### 📱 [Suite de Herramientas de TecnoLatino](https://tecnolatino.com/herramientas/)
 
-Centraliza **62 herramientas** de software utilitario, telefonía móvil, conectividad, privacidad, ciberseguridad, IA, viajes tecnológicos, resiliencia familiar y protección de identidad digital. La Suite incorpora además protocolos interactivos de respuesta ante incidentes como llamadas sospechosas, compromiso de cuentas, SIM swap y port-out fraud.
+Centraliza **67 herramientas** de software utilitario, telefonía móvil, conectividad, privacidad, ciberseguridad, IA, viajes tecnológicos, resiliencia familiar y protección de identidad digital. La Suite incorpora además protocolos interactivos de respuesta ante incidentes como llamadas sospechosas, compromiso de cuentas, SIM swap y port-out fraud.
 
 Los resultados compatibles pueden integrarse con:
 
 ### 🧠 [Mi Tecnología](https://tecnolatino.com/mi-tecnologia/)
 
 Un panel local que organiza herramientas, resultados y rutas de diagnóstico para reutilizar contexto técnico dentro del navegador.
+
+Las herramientas individuales compatibles pueden registrar su actividad y la finalización de sus diagnósticos mediante la integración con Suite. Que una herramienta figure como completada significa que se terminó su evaluación dentro de TecnoLatino; no confirma automáticamente que un servicio externo haya recuperado una cuenta o resuelto un incidente.
 
 ---
 
@@ -101,7 +104,7 @@ Panel local para registrar pruebas, diagnósticos, rutas de revisión, estado co
 
 ---
 
-# 📱 1. Índice Oficial de Herramientas de TecnoLatino — 62 Soluciones
+# 📱 1. Índice Oficial de Herramientas de TecnoLatino — 67 Soluciones
 
 Acceso directo a los módulos del laboratorio web de TecnoLatino.
 
@@ -219,6 +222,21 @@ Acceso directo a los módulos del laboratorio web de TecnoLatino.
 
 * **[Recuperar Cuenta Google/Gmail](https://tecnolatino.com/recuperar-cuenta-google-gmail/)**  
   Guía interactiva para diagnosticar y organizar la recuperación de una Cuenta de Google o Gmail cuando se olvidó la contraseña, se perdió acceso al teléfono o correo de recuperación, falla la verificación en dos pasos, cambió el dispositivo habitual o existe sospecha de acceso no autorizado. Ayuda a distinguir el escenario real y orienta hacia las vías oficiales de recuperación sin solicitar contraseñas, códigos de verificación ni otros secretos de autenticación.
+
+* **[Cuenta Microsoft / Outlook / Hotmail](https://tecnolatino.com/recuperar-cuenta-microsoft-outlook-hotmail/)**  
+  Guía interactiva para recuperar acceso a una cuenta Microsoft, Outlook o Hotmail cuando se olvidó la contraseña, se perdió un método de verificación, cambió el dispositivo habitual o existe sospecha de compromiso. Organiza las vías oficiales de recuperación sin solicitar contraseñas, códigos de seguridad ni otros secretos de autenticación.
+
+* **[Recuperar WhatsApp tomado](https://tecnolatino.com/recuperar-whatsapp-hackeado/)**  
+  Protocolo guiado para recuperar una cuenta de WhatsApp tomada o comprometida. Ayuda a revisar el registro del número, dispositivos vinculados, verificación en dos pasos y métodos de recuperación, priorizando la recuperación legítima de la cuenta sin solicitar códigos de verificación ni credenciales sensibles.
+
+* **[Separador de Identidades](https://tecnolatino.com/separar-cuentas-personales-trabajo-escuela/)**  
+  Ayuda a separar cuentas personales, laborales y escolares para reducir cruces de identidad, accesos y métodos de recuperación. Organiza correos, perfiles, dispositivos y autenticación por contexto sin mezclar credenciales ni asumir que una misma cuenta debe utilizarse para todos los ámbitos.
+
+* **[Meta: Recuperar Facebook e Instagram](https://tecnolatino.com/recuperar-facebook-instagram-hackeado/)**  
+  Guía interactiva para recuperar cuentas de Facebook e Instagram comprometidas, tomadas o bloqueadas. Ayuda a identificar el escenario, proteger los métodos de recuperación y seguir las vías oficiales de Meta sin solicitar contraseñas, códigos de verificación ni intentar evadir controles de acceso.
+
+* **[Recuperar Cuenta Amazon](https://tecnolatino.com/recuperar-cuenta-amazon/)**  
+  Diagnóstico interactivo para identificar problemas de contraseña, OTP, autenticación en dos pasos, teléfono perdido, passkeys, bloqueos de seguridad, cuentas en revisión, pagos rechazados o actividad no autorizada. Distingue los escenarios y orienta hacia las vías oficiales de Amazon sin solicitar credenciales, códigos ni documentos.
 
 * **[Protocolo SIM swap / port-out fraud](https://tecnolatino.com/sim-swap-port-out-fraud-usa/)**  
   Protocolo interactivo para actuar ante pérdida súbita de señal, cambio no autorizado de SIM/eSIM o transferencia fraudulenta del número en Estados Unidos. Organiza la respuesta entre operador, correo, bancos, mensajería y métodos de autenticación, distingue SIM swap de port-out fraud y no convierte una señal aislada en una confirmación automática de fraude.
@@ -415,3 +433,238 @@ Whole Disk
       ↓
 SSD físico
 ```
+
+Esta separación permite diferenciar el volumen lógico presentado por macOS del almacenamiento físico subyacente. Cuando un dato de salud, temperatura, S.M.A.R.T. o desgaste NVMe no está disponible, la herramienta debe conservar ese estado como desconocido, sin sustituirlo por un valor favorable.
+
+---
+
+# 🧠 Suites de Contexto Local
+
+## 📱 Mi Tecnología
+
+**URL:**  
+https://tecnolatino.com/mi-tecnologia/
+
+Organiza localmente información y resultados producidos por las herramientas de TecnoLatino.
+
+Funciones del ecosistema:
+
+* registro de herramientas ejecutadas;
+* resultados recientes;
+* rutas guiadas;
+* contexto reutilizable;
+* seguimiento de diagnóstico;
+* exportación e importación compatible;
+* almacenamiento local del navegador.
+
+Las herramientas individuales pueden integrarse con la Suite mediante identificadores estables y señales de resultado. La finalización de un diagnóstico no implica, por sí sola, que se haya solucionado el problema externo investigado.
+
+---
+
+## 💻 Mi Laptop
+
+**URL:**  
+https://laptopsrenovadas.com/mi-laptop/
+
+Centraliza el proceso de revisión y seguimiento de una laptop renovada o usada.
+
+Incluye:
+
+* perfil local del equipo;
+* estado conocido del hardware;
+* rutas de inspección;
+* pruebas realizadas;
+* diagnósticos guardados;
+* actividad reciente;
+* decisiones de compra;
+* información de mejoras;
+* exportación e importación de datos locales.
+
+---
+
+# 🧭 Filosofía de las Rutas Guiadas
+
+Las suites no se limitan a presentar una lista estática de utilidades.
+
+Determinadas herramientas pueden agruparse en **rutas**, donde cada prueba conduce al siguiente paso lógico del diagnóstico.
+
+Las rutas se mantienen separadas de las herramientas independientes. Incorporar una herramienta al Hub o al catálogo de Mi Tecnología no la convierte automáticamente en un paso de una ruta.
+
+### 📱 Compra de Celular Usado
+
+Una ruta puede combinar:
+
+1. IMEI.
+2. Bloqueos y gestión anterior.
+3. Piezas y reparaciones.
+4. Salud de batería.
+5. eSIM y liberación.
+6. Compatibilidad de red.
+7. Consumo de datos.
+8. Selección de plan.
+9. Portabilidad.
+
+---
+
+### 💻 Revisión de Laptop Renovada
+
+La ruta de revisión puede combinar:
+
+1. Auditoría Express.
+2. Checklist general.
+3. Service Tag, serial y garantía.
+4. Batería.
+5. Pantalla.
+6. Teclado.
+7. Distribución de teclado US vs Latinoamérica.
+8. Webcam.
+9. Micrófono.
+10. Altavoces.
+11. Temperatura.
+12. Test de estrés CPU y estabilidad.
+13. SSD / S.M.A.R.T.
+14. Bloqueos y gestión anterior.
+15. Decisión final: devolverla o quedársela.
+
+---
+
+# 🔬 Principios de Diseño del Laboratorio
+
+El proyecto sigue varios principios técnicos:
+
+### 1. Local-first
+
+Siempre que sea técnicamente posible, el procesamiento ocurre en el navegador.
+
+### 2. Privacidad por diseño
+
+No se solicitan credenciales, contraseñas ni información sensible innecesaria para realizar un diagnóstico.
+
+### 3. Explicabilidad
+
+Las herramientas buscan explicar **por qué** se produce una recomendación y no limitarse a mostrar una puntuación.
+
+### 4. Resultados reutilizables
+
+Los resultados compatibles pueden formar parte del contexto de **Mi Tecnología** o **Mi Laptop**.
+
+### 5. Diagnóstico progresivo
+
+Una herramienta puede conducir a otra cuando el resultado indica que se necesita una comprobación adicional.
+
+### 6. Interoperabilidad
+
+Las herramientas utilizan identificadores estables y contratos de eventos dentro de sus respectivos ecosistemas.
+
+### 7. Portabilidad
+
+Cuando la Suite lo permite, el usuario puede exportar su información local para conservarla fuera del navegador.
+
+### 8. Estados desconocidos explícitos
+
+Los datos ausentes o no verificables permanecen desconocidos. `Unknown` no equivale a `false`, `Missing` no equivale a `0` y la ausencia de evidencia no equivale a una aprobación.
+
+### 9. Herramientas y rutas independientes
+
+Las nuevas herramientas pueden añadirse al catálogo sin modificar los pasos de rutas existentes. Los cambios de rutas requieren una decisión técnica específica, no se infieren automáticamente del registro de una herramienta.
+
+### 10. Finalización verificable
+
+Una herramienta individual debe registrar su finalización solamente cuando genera el resultado que le corresponde. Abrir una página, iniciar un cuestionario o hacer clic en un botón no constituye por sí solo una evaluación completada.
+
+---
+
+# 🔐 Nota de Seguridad
+
+Las herramientas de este repositorio tienen fines de:
+
+* diagnóstico;
+* educación;
+* análisis preventivo;
+* auditoría de equipos propios o autorizados;
+* privacidad;
+* mantenimiento;
+* evaluación de compras;
+* resiliencia digital.
+
+No están diseñadas para:
+
+* eludir Activation Lock;
+* eliminar FRP sin autorización;
+* evadir MDM corporativo;
+* vulnerar cuentas;
+* obtener credenciales;
+* romper controles de acceso;
+* acceder a dispositivos ajenos.
+
+Las herramientas relacionadas con bloqueos y gestión están diseñadas para **detectar e interpretar señales de vinculación**, no para evadirlas.
+
+Los procedimientos de recuperación de cuentas de Apple, Google, Microsoft, WhatsApp, Meta y Amazon se orientan a procesos legítimos y canales oficiales. Una recomendación de recuperación no equivale a una verificación de identidad realizada por TecnoLatino.
+
+---
+
+# 🌎 Ecosistema
+
+## TecnoLatino
+
+* Sitio principal: https://tecnolatino.com/
+* Herramientas: https://tecnolatino.com/herramientas/
+* Mi Tecnología: https://tecnolatino.com/mi-tecnologia/
+
+## Laptops Renovadas
+
+* Sitio principal: https://laptopsrenovadas.com/
+* Herramientas: https://laptopsrenovadas.com/herramientas/
+* Mi Laptop: https://laptopsrenovadas.com/mi-laptop/
+
+---
+
+# 📊 Inventario Actual
+
+| Ecosistema | Herramientas |
+|---|---:|
+| 📱 TecnoLatino | **67** |
+| 💻 Laptops Renovadas | **39** |
+| **Total combinado** | **106** |
+
+Las suites **Mi Tecnología** y **Mi Laptop** son interfaces de contexto y seguimiento; no se cuentan como herramientas adicionales dentro del inventario.
+
+Las rutas guiadas tampoco incrementan el número de herramientas públicas. Sus pasos pueden utilizar herramientas existentes, sin duplicarlas en el catálogo.
+
+---
+
+# 📜 Licencia
+
+Consulta el archivo `LICENSE` del repositorio para conocer las condiciones de reutilización, distribución y modificación del código.
+
+---
+
+# 🤝 Contribuciones
+
+Las contribuciones son bienvenidas cuando respeten los principios fundamentales del proyecto:
+
+* privacidad por diseño;
+* procesamiento local cuando sea posible;
+* explicabilidad;
+* accesibilidad;
+* seguridad;
+* minimización de datos;
+* ausencia de técnicas de evasión de controles de acceso.
+
+Antes de enviar cambios, revisa la estructura del proyecto y evita introducir dependencias que obliguen a transmitir información sensible a servicios externos sin una justificación técnica clara.
+
+---
+
+## 🧰 Total del Laboratorio
+
+**106 herramientas públicas**
+
+* **67 herramientas en TecnoLatino**
+* **39 herramientas en Laptops Renovadas**
+* **2 suites de contexto local**
+  * Mi Tecnología
+  * Mi Laptop
+* rutas de diagnóstico y decisión independientes del inventario de herramientas;
+* procesamiento local y almacenamiento privado siempre que la función lo permite.
+
+El objetivo del ecosistema es transformar una colección de utilidades independientes en un laboratorio técnico coherente para diagnóstico, prevención, compra informada y resiliencia digital.
