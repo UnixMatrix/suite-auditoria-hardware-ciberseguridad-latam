@@ -36,7 +36,7 @@ La mayor parte del procesamiento técnico se realiza directamente en el navegado
 
 - [Arquitectura y privacidad](#-arquitectura-tecnológica-y-privacidad)
 - [Estructura del ecosistema](#-estructura-del-ecosistema-unificado)
-- [Índice TecnoLatino](#-1-índice-oficial-de-herramientas-de-tecnolatino--60-soluciones)
+- [Índice TecnoLatino](#-1-índice-oficial-de-herramientas-de-tecnolatino--61-soluciones)
 - [Índice Laptops Renovadas](#-2-índice-oficial-de-herramientas-de-laptops-renovadas--39-soluciones)
 - [Mejoras recientes de Auditoría Express](#-auditoría-express-multiplataforma--windows--macos)
 - [Suites de contexto local](#-suites-de-contexto-local)
@@ -71,7 +71,7 @@ El laboratorio se divide en dos grandes suites de diagnóstico y decisión que f
 
 ### 📱 [Suite de Herramientas de TecnoLatino](https://tecnolatino.com/herramientas/)
 
-Centraliza **60 herramientas** de software utilitario, telefonía móvil, conectividad, privacidad, ciberseguridad, IA, viajes tecnológicos, resiliencia familiar y protección de identidad digital. La Suite incorpora además protocolos interactivos de respuesta ante incidentes como llamadas sospechosas, compromiso de cuentas, SIM swap y port-out fraud.
+Centraliza **61 herramientas** de software utilitario, telefonía móvil, conectividad, privacidad, ciberseguridad, IA, viajes tecnológicos, resiliencia familiar y protección de identidad digital. La Suite incorpora además protocolos interactivos de respuesta ante incidentes como llamadas sospechosas, compromiso de cuentas, SIM swap y port-out fraud.
 
 Los resultados compatibles pueden integrarse con:
 
@@ -101,7 +101,7 @@ Panel local para registrar pruebas, diagnósticos, rutas de revisión, estado co
 
 ---
 
-# 📱 1. Índice Oficial de Herramientas de TecnoLatino — 60 Soluciones
+# 📱 1. Índice Oficial de Herramientas de TecnoLatino — 61 Soluciones
 
 Acceso directo a los módulos del laboratorio web de TecnoLatino.
 
@@ -213,6 +213,9 @@ Acceso directo a los módulos del laboratorio web de TecnoLatino.
 
 * **[Rescate del Autenticador](https://tecnolatino.com/autenticador-telefono-viejo/)**  
   Guía interactiva para recuperar el acceso cuando los códigos de autenticación quedaron en un teléfono viejo, se cambió de dispositivo o se perdió el acceso al autenticador. Ayuda a identificar sincronización disponible, códigos de respaldo y rutas alternativas de recuperación.
+
+* **[Apple ID, iCloud y Activation Lock](https://tecnolatino.com/apple-id-icloud-activation-lock/)**  
+  Guía interactiva para distinguir problemas relacionados con Apple ID o Cuenta de Apple, iCloud, Buscar y Activation Lock. Ayuda a identificar si un iPhone, iPad u otro dispositivo Apple sigue vinculado a otra cuenta y orienta hacia las vías legítimas de recuperación, desvinculación o transferencia sin intentar evadir los controles de seguridad.
 
 * **[Protocolo SIM swap / port-out fraud](https://tecnolatino.com/sim-swap-port-out-fraud-usa/)**  
   Protocolo interactivo para actuar ante pérdida súbita de señal, cambio no autorizado de SIM/eSIM o transferencia fraudulenta del número en Estados Unidos. Organiza la respuesta entre operador, correo, bancos, mensajería y métodos de autenticación, distingue SIM swap de port-out fraud y no convierte una señal aislada en una confirmación automática de fraude.
