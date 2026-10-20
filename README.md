@@ -37,7 +37,7 @@ La mayor parte del procesamiento técnico se realiza directamente en el navegado
 
 - [Arquitectura y privacidad](#-arquitectura-tecnológica-y-privacidad)
 - [Estructura del ecosistema](#-estructura-del-ecosistema-unificado)
-- [Índice TecnoLatino](#-1-índice-oficial-de-herramientas-de-tecnolatino--67-soluciones)
+- [Índice TecnoLatino](#-1-índice-oficial-de-herramientas-de-tecnolatino--72-soluciones)
 - [Índice Laptops Renovadas](#-2-índice-oficial-de-herramientas-de-laptops-renovadas--39-soluciones)
 - [Mejoras recientes de Auditoría Express](#-auditoría-express-multiplataforma--windows--macos)
 - [Suites de contexto local](#-suites-de-contexto-local)
@@ -72,7 +72,7 @@ El laboratorio se divide en dos grandes suites de diagnóstico y decisión que f
 
 ### 📱 [Suite de Herramientas de TecnoLatino](https://tecnolatino.com/herramientas/)
 
-Centraliza **67 herramientas** de software utilitario, telefonía móvil, conectividad, privacidad, ciberseguridad, IA, viajes tecnológicos, resiliencia familiar y protección de identidad digital. La Suite incorpora además protocolos interactivos de respuesta ante incidentes como llamadas sospechosas, compromiso de cuentas, SIM swap y port-out fraud.
+Centraliza **72 herramientas** de software utilitario, telefonía móvil, conectividad, privacidad, ciberseguridad, IA, tecnología para oficios, continuidad del trabajo, viajes tecnológicos, resiliencia familiar y protección de identidad digital. La Suite incorpora además protocolos interactivos de respuesta ante incidentes como llamadas sospechosas, compromiso de cuentas, SIM swap y port-out fraud.
 
 Los resultados compatibles pueden integrarse con:
 
@@ -104,7 +104,7 @@ Panel local para registrar pruebas, diagnósticos, rutas de revisión, estado co
 
 ---
 
-# 📱 1. Índice Oficial de Herramientas de TecnoLatino — 67 Soluciones
+# 📱 1. Índice Oficial de Herramientas de TecnoLatino — 72 Soluciones
 
 Acceso directo a los módulos del laboratorio web de TecnoLatino.
 
@@ -178,7 +178,7 @@ Acceso directo a los módulos del laboratorio web de TecnoLatino.
 
 ---
 
-## 🌐 Redes, WiFi y Conectividad Doméstica
+## 🌐 Redes, WiFi y Conectividad
 
 * **[Internet Calculator](https://tecnolatino.com/internet-calculator/)**  
   Calcula qué velocidad de Internet puede necesitar un hogar según personas, dispositivos, actividades simultáneas y necesidades de descarga/subida, incluyendo gaming, streaming y videollamadas.
@@ -197,6 +197,9 @@ Acceso directo a los módulos del laboratorio web de TecnoLatino.
 
 * **[Optimizador de WiFi para tu Casa](https://tecnolatino.com/optimizador-de-wifi-para-tu-casa/)**  
   Diagnóstico guiado para identificar obstáculos, ubicación deficiente del router y problemas de cobertura doméstica.
+
+* **[WiFi sin Conflictos — Trabajo y Negocios](https://tecnolatino.com/wifi-sin-conflictos/)**  
+  Diagnóstico de continuidad de conectividad en oficinas, comercios y trabajo remoto. Organiza pruebas para videollamadas, llamadas VoIP, cobros, VPN, impresoras y redes de invitados; distingue hechos, hipótesis y permisos de intervención sin acceder a redes ni solicitar contraseñas.
 
 * **[¿Funciona con tu Smart Home? Verificador de Compatibilidad](https://tecnolatino.com/compatibilidad-smart-home/)**  
   Cruza ecosistema, protocolo e infraestructura para comprobar compatibilidad con Matter, Thread, Alexa, Google Home, Apple Home, SmartThings, Zigbee y Z-Wave.
@@ -281,6 +284,12 @@ Acceso directo a los módulos del laboratorio web de TecnoLatino.
 * **[Constructor de Prompts](https://tecnolatino.com/constructor-de-prompts/)**  
   Ayuda a estructurar instrucciones más claras y útiles para sistemas de inteligencia artificial.
 
+* **[CotizaTech USA — Estimaciones Técnicas Bilingües](https://tecnolatino.com/cotizatech-usa/)**  
+  Permite preparar cotizaciones de oficios en Estados Unidos con medidas, cantidades, materiales, horas, costos introducidos por el usuario y descripciones del trabajo en español e inglés. Genera un alcance editable y un documento imprimible sin imponer tarifas supuestamente oficiales.
+
+* **[Habla de tu Oficio USA](https://tecnolatino.com/habla-de-tu-oficio-usa/)**  
+  Entrenador de inglés laboral para practicar conversaciones con clientes, supervisores y entrevistadores según el oficio y la situación. Ofrece ejercicios guiados, respuestas escritas o voz opcional, observaciones sobre el texto y un informe de práctica; no certifica pronunciación ni nivel de inglés.
+
 * **[Desintoxicador de Textos de IA](https://tecnolatino.com/desintoxicador-de-textos-de-ia/)**  
   Ayuda a revisar textos sintéticos y reducir patrones de redacción excesivamente robóticos.
 
@@ -296,6 +305,9 @@ Acceso directo a los módulos del laboratorio web de TecnoLatino.
 * **[¿Le Sirve Allá?](https://tecnolatino.com/le-sirve-alla-compatibilidad-aparatos/)**  
   Evalúa compatibilidad eléctrica y tecnológica de dispositivos cuando se utilizarán en otro país.
 
+* **[El Puente Digital USA–Latam](https://tecnolatino.com/puente-digital-usa-latam/)**  
+  Orienta decisiones y preparativos de continuidad digital entre Estados Unidos y Latinoamérica, con atención a compatibilidad, acceso y servicios tecnológicos entre países.
+
 * **[Armador de Vuelos USA ↔ Latinoamérica](https://tecnolatino.com/armador-de-vuelos/)**  
   Herramienta para organizar y comparar alternativas de rutas aéreas entre Estados Unidos y Latinoamérica.
 
@@ -307,6 +319,9 @@ Acceso directo a los módulos del laboratorio web de TecnoLatino.
 
 * **[Plan de Emergencia Digital Familiar](https://tecnolatino.com/plan-de-emergencia-digital-familiar/)**  
   Ayuda a organizar acceso de emergencia, recuperación de cuentas y continuidad digital familiar.
+
+* **[Memoria a Salvo](https://tecnolatino.com/memoria-a-salvo/)**  
+  Ayuda a proteger fotos, archivos y recuerdos antes de liberar espacio o cambiar de celular. Distingue almacenamiento local, iCloud, Google Fotos y WhatsApp, comprueba el estado de las copias y propone acciones conservadoras para evitar pérdidas por borrados sincronizados.
 
 * **[La Llave de la Escuela](https://tecnolatino.com/la-llave-de-la-escuela/)**  
   Ayuda a identificar qué cuenta corresponde usar para acceder a plataformas escolares y a separar el acceso del estudiante del portal de padres. Orienta la recuperación de acceso en entornos como Clever, ClassLink y Google Classroom sin mezclar credenciales ni roles.
@@ -623,9 +638,9 @@ Los procedimientos de recuperación de cuentas de Apple, Google, Microsoft, What
 
 | Ecosistema | Herramientas |
 |---|---:|
-| 📱 TecnoLatino | **67** |
+| 📱 TecnoLatino | **72** |
 | 💻 Laptops Renovadas | **39** |
-| **Total combinado** | **106** |
+| **Total combinado** | **111** |
 
 Las suites **Mi Tecnología** y **Mi Laptop** son interfaces de contexto y seguimiento; no se cuentan como herramientas adicionales dentro del inventario.
 
@@ -657,9 +672,9 @@ Antes de enviar cambios, revisa la estructura del proyecto y evita introducir de
 
 ## 🧰 Total del Laboratorio
 
-**106 herramientas públicas**
+**111 herramientas públicas**
 
-* **67 herramientas en TecnoLatino**
+* **72 herramientas en TecnoLatino**
 * **39 herramientas en Laptops Renovadas**
 * **2 suites de contexto local**
   * Mi Tecnología
